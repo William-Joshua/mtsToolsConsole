@@ -1,0 +1,74 @@
+[
+  {
+    "RootMenuItem": {
+      "MenuName": "生产流程",
+      "MenuIconEnable": true,
+      "MenuIcon": "process",
+      "ExpandEnable": true,
+      "CurrentExpandState": true,
+      "CurrentSelectState": false
+    },
+    "SubMenuItems": [
+      {
+        "MenuName": "生产流转登记",
+        "MenuIconEnable": false,
+        "MenuIcon": null,
+        "ExpandEnable": false,
+        "CurrentExpandState": false,
+        "CurrentSelectState": false
+      },
+      {
+        "MenuName": "老化过程登记",
+        "MenuIconEnable": false,
+        "MenuIcon": null,
+        "ExpandEnable": false,
+        "CurrentExpandState": false,
+        "CurrentSelectState": false
+      },
+      {
+        "MenuName": "包装出库登记",
+        "MenuIconEnable": false,
+        "MenuIcon": null,
+        "ExpandEnable": false,
+        "CurrentExpandState": false,
+        "CurrentSelectState": false
+      },
+      {
+        "MenuName": "产品入库管理",
+        "MenuIconEnable": false,
+        "MenuIcon": null,
+        "ExpandEnable": false,
+        "CurrentExpandState": false,
+        "CurrentSelectState": false
+      }
+    ]
+  },
+  {
+    "RootMenuItem": {
+      "MenuName": "电子看板",
+      "MenuIconEnable": true,
+      "MenuIcon": "board",
+      "ExpandEnable": true,
+      "CurrentExpandState": true,
+      "CurrentSelectState": false
+    },
+    "SubMenuItems": [
+      {
+        "MenuName": "组装电子看板",
+        "MenuIconEnable": false,
+        "MenuIcon": null,
+        "ExpandEnable": false,
+        "CurrentExpandState": false,
+        "CurrentSelectState": false
+      },
+      {
+        "MenuName": "包装电子看板",
+        "MenuIconEnable": false,
+        "MenuIcon": null,
+        "ExpandEnable": false,
+        "CurrentExpandState": false,
+        "CurrentSelectState": false
+      }
+    ]
+  }
+]

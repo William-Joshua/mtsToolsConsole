@@ -33,8 +33,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DevExpress.Data.v18.2, Version=18.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v18.2.Core, Version=18.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v18.2, Version=18.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v18.2, Version=18.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.7\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,14 +56,48 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Components\VMAVertMenuItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\VMAVertMenuItem.Designer.cs">
+      <DependentUpon>VMAVertMenuItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\VMAVertNavi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\VMAVertNavi.Designer.cs">
+      <DependentUpon>VMAVertNavi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomePage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="HomePage.Designer.cs">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ProdProcessRecord.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\ProdProcessRecord.Designer.cs">
+      <DependentUpon>ProdProcessRecord.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Support\BugReportPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Support\BugReportPage.Designer.cs">
+      <DependentUpon>BugReportPage.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Components\VMAVertMenuItem.resx">
+      <DependentUpon>VMAVertMenuItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\VMAVertNavi.resx">
+      <DependentUpon>VMAVertNavi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomePage.resx">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -62,7 +106,12 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Support\BugReportPage.resx">
+      <DependentUpon>BugReportPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -75,6 +124,39 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Sources\Images\baseline_account_circle_white_36dp.png" />
+    <Content Include="Sources\Images\baseline_cloud_upload_black_48dp.png" />
+    <Content Include="Sources\Images\baseline_collections_black_48dp.png" />
+    <Content Include="Sources\Images\baseline_devices_other_black_24dp.png" />
+    <Content Include="Sources\Images\baseline_dvr_black_24dp.png" />
+    <Content Include="Sources\Images\baseline_expand_less_black_24dp.png" />
+    <Content Include="Sources\Images\baseline_expand_more_black_24dp.png" />
+    <Content Include="Sources\Images\baseline_fullscreen_exit_white_24dp.png" />
+    <Content Include="Sources\Images\baseline_fullscreen_white_24dp.png" />
+    <Content Include="Sources\Images\baseline_menu_white_24dp.png" />
+    <Content Include="Sources\Images\baseline_new_releases_black_24dp.png" />
+    <Content Include="Sources\Images\baseline_store_black_24dp.png" />
+    <Content Include="Sources\Images\baseline_view_day_black_24dp.png" />
+    <Content Include="Sources\Images\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\mtsToolsConsole.Common\mtsToolsConsole.Common.csproj">
+      <Project>{5849e01e-2630-4be3-a73b-28f3a138a926}</Project>
+      <Name>mtsToolsConsole.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\mtsToolsConsole.Model\mtsToolsConsole.Model.csproj">
+      <Project>{848539fb-0b55-4d3a-b780-bd9160c536fb}</Project>
+      <Name>mtsToolsConsole.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\mtsToolsConsole.StaticSource\mtsToolsConsole.StaticSource.csproj">
+      <Project>{371c8ce9-87cc-4633-87ce-4b5f70d542d6}</Project>
+      <Name>mtsToolsConsole.StaticSource</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Cache\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
