@@ -13,6 +13,7 @@ using mtsToolsConsole.Support;
 using mtsToolsConsole.Components;
 using mtsToolsConsole.Model;
 using Newtonsoft.Json;
+using mtsToolsConsole.Pages;
 
 namespace mtsToolsConsole
 {
@@ -23,6 +24,8 @@ namespace mtsToolsConsole
         public HomePage()
         {
             InitializeComponent();
+
+            InitDefinePage();
         }
 
         private void _picShowNaviMenu_MouseEnter(object sender, EventArgs e)
@@ -110,6 +113,13 @@ namespace mtsToolsConsole
             vmaVertNavi.ItemNaviMenuSource = naviMenuBars;
             vmaVertNavi.Dock = DockStyle.Fill;
             this._pnlVertNaviBar.Controls.Add(vmaVertNavi);
+        }
+
+        private void InitDefinePage()
+        {
+            Control homepage = new ProdProcessRecord();
+            homepage.Dock = DockStyle.Fill;
+            _pnlWorkFrame.Controls.Add(homepage);
         }
     }
 }

@@ -36,6 +36,7 @@
     <Reference Include="DevExpress.Data.v18.2, Version=18.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Printing.v18.2.Core, Version=18.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Utils.v18.2, Version=18.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v18.2, Version=18.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraEditors.v18.2, Version=18.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
@@ -56,6 +57,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Components\VMACardGroupBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\VMACardGroupBox.Designer.cs">
+      <DependentUpon>VMACardGroupBox.cs</DependentUpon>
+    </Compile>
     <Compile Include="Components\VMAVertMenuItem.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -88,6 +95,9 @@
     <Compile Include="Support\BugReportPage.Designer.cs">
       <DependentUpon>BugReportPage.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Components\VMACardGroupBox.resx">
+      <DependentUpon>VMACardGroupBox.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Components\VMAVertMenuItem.resx">
       <DependentUpon>VMAVertMenuItem.cs</DependentUpon>
     </EmbeddedResource>
@@ -96,6 +106,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="HomePage.resx">
       <DependentUpon>HomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\ProdProcessRecord.resx">
+      <DependentUpon>ProdProcessRecord.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -135,6 +148,8 @@
     <Content Include="Sources\Images\baseline_expand_more_black_24dp.png" />
     <Content Include="Sources\Images\baseline_fullscreen_exit_white_24dp.png" />
     <Content Include="Sources\Images\baseline_fullscreen_white_24dp.png" />
+    <Content Include="Sources\Images\baseline_home_black_18dp.png" />
+    <Content Include="Sources\Images\baseline_home_black_24dp.png" />
     <Content Include="Sources\Images\baseline_menu_white_24dp.png" />
     <Content Include="Sources\Images\baseline_new_releases_black_24dp.png" />
     <Content Include="Sources\Images\baseline_store_black_24dp.png" />

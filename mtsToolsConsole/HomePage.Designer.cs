@@ -30,20 +30,21 @@
         {
             this._pnlMainSpace = new System.Windows.Forms.Panel();
             this._pnlMainWorkSpace = new System.Windows.Forms.Panel();
+            this._pnlWorkFrame = new System.Windows.Forms.Panel();
             this._pnlStaticFloatBar = new System.Windows.Forms.Panel();
             this._pnlStaticFloatRight = new System.Windows.Forms.Panel();
             this._pnlStaticFloatHelp = new System.Windows.Forms.Panel();
             this._picStaticFloatHelp = new System.Windows.Forms.Label();
             this._pnlStaticFloatExpend = new System.Windows.Forms.Panel();
+            this._picStaticFloatExpand = new DevExpress.XtraEditors.PictureEdit();
             this._pnlStaticFloatUser = new System.Windows.Forms.Panel();
+            this._picStaticFloatUser = new DevExpress.XtraEditors.PictureEdit();
+            this._picShowNaviMenu = new DevExpress.XtraEditors.PictureEdit();
             this._pnlNaviMenu = new System.Windows.Forms.Panel();
+            this._pnlVertNaviBar = new System.Windows.Forms.Panel();
             this._separateNavi = new System.Windows.Forms.Label();
             this._pnlHomeLogo = new System.Windows.Forms.Panel();
             this._lblHomeTitle = new DevExpress.XtraEditors.LabelControl();
-            this._pnlVertNaviBar = new System.Windows.Forms.Panel();
-            this._picStaticFloatExpand = new DevExpress.XtraEditors.PictureEdit();
-            this._picStaticFloatUser = new DevExpress.XtraEditors.PictureEdit();
-            this._picShowNaviMenu = new DevExpress.XtraEditors.PictureEdit();
             this._picHomeLogo = new DevExpress.XtraEditors.PictureEdit();
             this._pnlMainSpace.SuspendLayout();
             this._pnlMainWorkSpace.SuspendLayout();
@@ -51,35 +52,45 @@
             this._pnlStaticFloatRight.SuspendLayout();
             this._pnlStaticFloatHelp.SuspendLayout();
             this._pnlStaticFloatExpend.SuspendLayout();
-            this._pnlStaticFloatUser.SuspendLayout();
-            this._pnlNaviMenu.SuspendLayout();
-            this._pnlHomeLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this._picStaticFloatExpand.Properties)).BeginInit();
+            this._pnlStaticFloatUser.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this._picStaticFloatUser.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._picShowNaviMenu.Properties)).BeginInit();
+            this._pnlNaviMenu.SuspendLayout();
+            this._pnlHomeLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this._picHomeLogo.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // _pnlMainSpace
             // 
-            this._pnlMainSpace.BackColor = System.Drawing.Color.WhiteSmoke;
+            this._pnlMainSpace.BackColor = System.Drawing.Color.White;
             this._pnlMainSpace.Controls.Add(this._pnlMainWorkSpace);
             this._pnlMainSpace.Controls.Add(this._pnlNaviMenu);
             this._pnlMainSpace.Dock = System.Windows.Forms.DockStyle.Fill;
             this._pnlMainSpace.Location = new System.Drawing.Point(0, 0);
             this._pnlMainSpace.Name = "_pnlMainSpace";
-            this._pnlMainSpace.Size = new System.Drawing.Size(1054, 736);
+            this._pnlMainSpace.Size = new System.Drawing.Size(1070, 736);
             this._pnlMainSpace.TabIndex = 0;
             // 
             // _pnlMainWorkSpace
             // 
             this._pnlMainWorkSpace.BackColor = System.Drawing.Color.Transparent;
+            this._pnlMainWorkSpace.Controls.Add(this._pnlWorkFrame);
             this._pnlMainWorkSpace.Controls.Add(this._pnlStaticFloatBar);
             this._pnlMainWorkSpace.Dock = System.Windows.Forms.DockStyle.Fill;
             this._pnlMainWorkSpace.Location = new System.Drawing.Point(260, 0);
             this._pnlMainWorkSpace.Name = "_pnlMainWorkSpace";
-            this._pnlMainWorkSpace.Size = new System.Drawing.Size(794, 736);
+            this._pnlMainWorkSpace.Size = new System.Drawing.Size(810, 736);
             this._pnlMainWorkSpace.TabIndex = 1;
+            // 
+            // _pnlWorkFrame
+            // 
+            this._pnlWorkFrame.BackColor = System.Drawing.Color.Transparent;
+            this._pnlWorkFrame.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._pnlWorkFrame.Location = new System.Drawing.Point(0, 64);
+            this._pnlWorkFrame.Name = "_pnlWorkFrame";
+            this._pnlWorkFrame.Size = new System.Drawing.Size(810, 672);
+            this._pnlWorkFrame.TabIndex = 1;
             // 
             // _pnlStaticFloatBar
             // 
@@ -89,7 +100,7 @@
             this._pnlStaticFloatBar.Dock = System.Windows.Forms.DockStyle.Top;
             this._pnlStaticFloatBar.Location = new System.Drawing.Point(0, 0);
             this._pnlStaticFloatBar.Name = "_pnlStaticFloatBar";
-            this._pnlStaticFloatBar.Size = new System.Drawing.Size(794, 64);
+            this._pnlStaticFloatBar.Size = new System.Drawing.Size(810, 64);
             this._pnlStaticFloatBar.TabIndex = 0;
             // 
             // _pnlStaticFloatRight
@@ -98,7 +109,7 @@
             this._pnlStaticFloatRight.Controls.Add(this._pnlStaticFloatExpend);
             this._pnlStaticFloatRight.Controls.Add(this._pnlStaticFloatUser);
             this._pnlStaticFloatRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this._pnlStaticFloatRight.Location = new System.Drawing.Point(594, 0);
+            this._pnlStaticFloatRight.Location = new System.Drawing.Point(610, 0);
             this._pnlStaticFloatRight.Name = "_pnlStaticFloatRight";
             this._pnlStaticFloatRight.Size = new System.Drawing.Size(200, 64);
             this._pnlStaticFloatRight.TabIndex = 1;
@@ -138,6 +149,21 @@
             this._pnlStaticFloatExpend.Size = new System.Drawing.Size(47, 64);
             this._pnlStaticFloatExpend.TabIndex = 1;
             // 
+            // _picStaticFloatExpand
+            // 
+            this._picStaticFloatExpand.EditValue = global::mtsToolsConsole.Properties.Resources.baseline_fullscreen_white_24dp;
+            this._picStaticFloatExpand.Location = new System.Drawing.Point(8, 16);
+            this._picStaticFloatExpand.Name = "_picStaticFloatExpand";
+            this._picStaticFloatExpand.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this._picStaticFloatExpand.Properties.Appearance.Options.UseBackColor = true;
+            this._picStaticFloatExpand.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this._picStaticFloatExpand.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this._picStaticFloatExpand.Size = new System.Drawing.Size(32, 32);
+            this._picStaticFloatExpand.TabIndex = 1;
+            this._picStaticFloatExpand.Click += new System.EventHandler(this._picStaticFloatExpand_Click);
+            this._picStaticFloatExpand.MouseEnter += new System.EventHandler(this._picStaticFloatExpand_MouseEnter);
+            this._picStaticFloatExpand.MouseLeave += new System.EventHandler(this._picStaticFloatExpand_MouseLeave);
+            // 
             // _pnlStaticFloatUser
             // 
             this._pnlStaticFloatUser.Controls.Add(this._picStaticFloatUser);
@@ -146,6 +172,35 @@
             this._pnlStaticFloatUser.Name = "_pnlStaticFloatUser";
             this._pnlStaticFloatUser.Size = new System.Drawing.Size(91, 64);
             this._pnlStaticFloatUser.TabIndex = 0;
+            // 
+            // _picStaticFloatUser
+            // 
+            this._picStaticFloatUser.EditValue = global::mtsToolsConsole.Properties.Resources.baseline_account_circle_white_36dp;
+            this._picStaticFloatUser.Location = new System.Drawing.Point(6, 10);
+            this._picStaticFloatUser.Name = "_picStaticFloatUser";
+            this._picStaticFloatUser.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this._picStaticFloatUser.Properties.Appearance.Options.UseBackColor = true;
+            this._picStaticFloatUser.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this._picStaticFloatUser.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this._picStaticFloatUser.Size = new System.Drawing.Size(44, 44);
+            this._picStaticFloatUser.TabIndex = 0;
+            this._picStaticFloatUser.MouseEnter += new System.EventHandler(this._picStaticFloatUser_MouseEnter);
+            this._picStaticFloatUser.MouseLeave += new System.EventHandler(this._picStaticFloatUser_MouseLeave);
+            // 
+            // _picShowNaviMenu
+            // 
+            this._picShowNaviMenu.EditValue = global::mtsToolsConsole.Properties.Resources.baseline_menu_white_24dp;
+            this._picShowNaviMenu.Location = new System.Drawing.Point(65, 17);
+            this._picShowNaviMenu.Name = "_picShowNaviMenu";
+            this._picShowNaviMenu.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this._picShowNaviMenu.Properties.Appearance.Options.UseBackColor = true;
+            this._picShowNaviMenu.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this._picShowNaviMenu.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this._picShowNaviMenu.Size = new System.Drawing.Size(32, 32);
+            this._picShowNaviMenu.TabIndex = 0;
+            this._picShowNaviMenu.Click += new System.EventHandler(this._picShowNaviMenu_Click);
+            this._picShowNaviMenu.MouseEnter += new System.EventHandler(this._picShowNaviMenu_MouseEnter);
+            this._picShowNaviMenu.MouseLeave += new System.EventHandler(this._picShowNaviMenu_MouseLeave);
             // 
             // _pnlNaviMenu
             // 
@@ -158,6 +213,14 @@
             this._pnlNaviMenu.Name = "_pnlNaviMenu";
             this._pnlNaviMenu.Size = new System.Drawing.Size(260, 736);
             this._pnlNaviMenu.TabIndex = 0;
+            // 
+            // _pnlVertNaviBar
+            // 
+            this._pnlVertNaviBar.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._pnlVertNaviBar.Location = new System.Drawing.Point(0, 64);
+            this._pnlVertNaviBar.Name = "_pnlVertNaviBar";
+            this._pnlVertNaviBar.Size = new System.Drawing.Size(259, 672);
+            this._pnlVertNaviBar.TabIndex = 2;
             // 
             // _separateNavi
             // 
@@ -191,58 +254,6 @@
             this._lblHomeTitle.TabIndex = 1;
             this._lblHomeTitle.Text = "ITECH MTS TOOL";
             // 
-            // _pnlVertNaviBar
-            // 
-            this._pnlVertNaviBar.Dock = System.Windows.Forms.DockStyle.Fill;
-            this._pnlVertNaviBar.Location = new System.Drawing.Point(0, 64);
-            this._pnlVertNaviBar.Name = "_pnlVertNaviBar";
-            this._pnlVertNaviBar.Size = new System.Drawing.Size(259, 672);
-            this._pnlVertNaviBar.TabIndex = 2;
-            // 
-            // _picStaticFloatExpand
-            // 
-            this._picStaticFloatExpand.EditValue = global::mtsToolsConsole.Properties.Resources.baseline_fullscreen_white_24dp;
-            this._picStaticFloatExpand.Location = new System.Drawing.Point(8, 16);
-            this._picStaticFloatExpand.Name = "_picStaticFloatExpand";
-            this._picStaticFloatExpand.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this._picStaticFloatExpand.Properties.Appearance.Options.UseBackColor = true;
-            this._picStaticFloatExpand.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this._picStaticFloatExpand.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this._picStaticFloatExpand.Size = new System.Drawing.Size(32, 32);
-            this._picStaticFloatExpand.TabIndex = 1;
-            this._picStaticFloatExpand.Click += new System.EventHandler(this._picStaticFloatExpand_Click);
-            this._picStaticFloatExpand.MouseEnter += new System.EventHandler(this._picStaticFloatExpand_MouseEnter);
-            this._picStaticFloatExpand.MouseLeave += new System.EventHandler(this._picStaticFloatExpand_MouseLeave);
-            // 
-            // _picStaticFloatUser
-            // 
-            this._picStaticFloatUser.EditValue = global::mtsToolsConsole.Properties.Resources.baseline_account_circle_white_36dp;
-            this._picStaticFloatUser.Location = new System.Drawing.Point(6, 10);
-            this._picStaticFloatUser.Name = "_picStaticFloatUser";
-            this._picStaticFloatUser.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this._picStaticFloatUser.Properties.Appearance.Options.UseBackColor = true;
-            this._picStaticFloatUser.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this._picStaticFloatUser.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this._picStaticFloatUser.Size = new System.Drawing.Size(44, 44);
-            this._picStaticFloatUser.TabIndex = 0;
-            this._picStaticFloatUser.MouseEnter += new System.EventHandler(this._picStaticFloatUser_MouseEnter);
-            this._picStaticFloatUser.MouseLeave += new System.EventHandler(this._picStaticFloatUser_MouseLeave);
-            // 
-            // _picShowNaviMenu
-            // 
-            this._picShowNaviMenu.EditValue = global::mtsToolsConsole.Properties.Resources.baseline_menu_white_24dp;
-            this._picShowNaviMenu.Location = new System.Drawing.Point(65, 17);
-            this._picShowNaviMenu.Name = "_picShowNaviMenu";
-            this._picShowNaviMenu.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this._picShowNaviMenu.Properties.Appearance.Options.UseBackColor = true;
-            this._picShowNaviMenu.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this._picShowNaviMenu.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this._picShowNaviMenu.Size = new System.Drawing.Size(32, 32);
-            this._picShowNaviMenu.TabIndex = 0;
-            this._picShowNaviMenu.Click += new System.EventHandler(this._picShowNaviMenu_Click);
-            this._picShowNaviMenu.MouseEnter += new System.EventHandler(this._picShowNaviMenu_MouseEnter);
-            this._picShowNaviMenu.MouseLeave += new System.EventHandler(this._picShowNaviMenu_MouseLeave);
-            // 
             // _picHomeLogo
             // 
             this._picHomeLogo.EditValue = global::mtsToolsConsole.Properties.Resources.logo;
@@ -258,9 +269,11 @@
             // 
             // HomePage
             // 
+            this.Appearance.BackColor = System.Drawing.Color.White;
+            this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1054, 736);
+            this.ClientSize = new System.Drawing.Size(1070, 736);
             this.Controls.Add(this._pnlMainSpace);
             this.LookAndFeel.SkinName = "Office 2019 Colorful";
             this.LookAndFeel.UseDefaultLookAndFeel = false;
@@ -275,13 +288,13 @@
             this._pnlStaticFloatHelp.ResumeLayout(false);
             this._pnlStaticFloatHelp.PerformLayout();
             this._pnlStaticFloatExpend.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this._picStaticFloatExpand.Properties)).EndInit();
             this._pnlStaticFloatUser.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this._picStaticFloatUser.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._picShowNaviMenu.Properties)).EndInit();
             this._pnlNaviMenu.ResumeLayout(false);
             this._pnlHomeLogo.ResumeLayout(false);
             this._pnlHomeLogo.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this._picStaticFloatExpand.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this._picStaticFloatUser.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this._picShowNaviMenu.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this._picHomeLogo.Properties)).EndInit();
             this.ResumeLayout(false);
 
@@ -306,5 +319,6 @@
         private DevExpress.XtraEditors.PictureEdit _picStaticFloatExpand;
         private System.Windows.Forms.Label _picStaticFloatHelp;
         private System.Windows.Forms.Panel _pnlVertNaviBar;
+        private System.Windows.Forms.Panel _pnlWorkFrame;
     }
 }

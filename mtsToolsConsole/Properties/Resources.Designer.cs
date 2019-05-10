@@ -153,6 +153,26 @@ namespace mtsToolsConsole.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap baseline_home_black_18dp {
+            get {
+                object obj = ResourceManager.GetObject("baseline_home_black_18dp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap baseline_home_black_24dp {
+            get {
+                object obj = ResourceManager.GetObject("baseline_home_black_24dp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap baseline_menu_white_24dp {
             get {
                 object obj = ResourceManager.GetObject("baseline_menu_white_24dp", resourceCulture);

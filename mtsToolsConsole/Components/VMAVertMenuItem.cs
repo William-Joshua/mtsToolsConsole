@@ -9,10 +9,11 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using mtsToolsConsole.Model;
+using System.ComponentModel.Design;
 
 namespace mtsToolsConsole.Components
 {
-
+    [Designer("System.Windows.Forms.Design.ParentControlDesigner, System.Design", typeof(IDesigner))]
     public partial class VMAVertMenuItem : DevExpress.XtraEditors.XtraUserControl
     {
         #region 数据源，自定义属性
