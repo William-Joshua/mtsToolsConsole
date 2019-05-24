@@ -69,7 +69,7 @@
             this._pnlMainSpace.Dock = System.Windows.Forms.DockStyle.Fill;
             this._pnlMainSpace.Location = new System.Drawing.Point(0, 0);
             this._pnlMainSpace.Name = "_pnlMainSpace";
-            this._pnlMainSpace.Size = new System.Drawing.Size(1070, 736);
+            this._pnlMainSpace.Size = new System.Drawing.Size(1078, 736);
             this._pnlMainSpace.TabIndex = 0;
             // 
             // _pnlMainWorkSpace
@@ -80,7 +80,7 @@
             this._pnlMainWorkSpace.Dock = System.Windows.Forms.DockStyle.Fill;
             this._pnlMainWorkSpace.Location = new System.Drawing.Point(260, 0);
             this._pnlMainWorkSpace.Name = "_pnlMainWorkSpace";
-            this._pnlMainWorkSpace.Size = new System.Drawing.Size(810, 736);
+            this._pnlMainWorkSpace.Size = new System.Drawing.Size(818, 736);
             this._pnlMainWorkSpace.TabIndex = 1;
             // 
             // _pnlWorkFrame
@@ -89,7 +89,7 @@
             this._pnlWorkFrame.Dock = System.Windows.Forms.DockStyle.Fill;
             this._pnlWorkFrame.Location = new System.Drawing.Point(0, 64);
             this._pnlWorkFrame.Name = "_pnlWorkFrame";
-            this._pnlWorkFrame.Size = new System.Drawing.Size(810, 672);
+            this._pnlWorkFrame.Size = new System.Drawing.Size(818, 672);
             this._pnlWorkFrame.TabIndex = 1;
             // 
             // _pnlStaticFloatBar
@@ -100,7 +100,7 @@
             this._pnlStaticFloatBar.Dock = System.Windows.Forms.DockStyle.Top;
             this._pnlStaticFloatBar.Location = new System.Drawing.Point(0, 0);
             this._pnlStaticFloatBar.Name = "_pnlStaticFloatBar";
-            this._pnlStaticFloatBar.Size = new System.Drawing.Size(810, 64);
+            this._pnlStaticFloatBar.Size = new System.Drawing.Size(818, 64);
             this._pnlStaticFloatBar.TabIndex = 0;
             // 
             // _pnlStaticFloatRight
@@ -109,7 +109,7 @@
             this._pnlStaticFloatRight.Controls.Add(this._pnlStaticFloatExpend);
             this._pnlStaticFloatRight.Controls.Add(this._pnlStaticFloatUser);
             this._pnlStaticFloatRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this._pnlStaticFloatRight.Location = new System.Drawing.Point(610, 0);
+            this._pnlStaticFloatRight.Location = new System.Drawing.Point(618, 0);
             this._pnlStaticFloatRight.Name = "_pnlStaticFloatRight";
             this._pnlStaticFloatRight.Size = new System.Drawing.Size(200, 64);
             this._pnlStaticFloatRight.TabIndex = 1;
@@ -273,14 +273,13 @@
             this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1070, 736);
+            this.ClientSize = new System.Drawing.Size(1078, 736);
             this.Controls.Add(this._pnlMainSpace);
             this.LookAndFeel.SkinName = "Office 2019 Colorful";
             this.LookAndFeel.UseDefaultLookAndFeel = false;
             this.Name = "HomePage";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Load += new System.EventHandler(this.HomePage_Load);
             this._pnlMainSpace.ResumeLayout(false);
             this._pnlMainWorkSpace.ResumeLayout(false);
             this._pnlStaticFloatBar.ResumeLayout(false);

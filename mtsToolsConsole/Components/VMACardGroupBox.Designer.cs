@@ -28,45 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this._pnlMainCardSpace = new System.Windows.Forms.Panel();
-            this._lblTilteSeparSpace = new System.Windows.Forms.Label();
             this._pnlCardTitle = new System.Windows.Forms.Panel();
             this._lblCardTitle = new System.Windows.Forms.Label();
-            this._pnlMainCardSpace.SuspendLayout();
             this._pnlCardTitle.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // _pnlMainCardSpace
-            // 
-            this._pnlMainCardSpace.BackColor = System.Drawing.Color.Transparent;
-            this._pnlMainCardSpace.Controls.Add(this._lblTilteSeparSpace);
-            this._pnlMainCardSpace.Controls.Add(this._pnlCardTitle);
-            this._pnlMainCardSpace.Dock = System.Windows.Forms.DockStyle.Fill;
-            this._pnlMainCardSpace.Location = new System.Drawing.Point(0, 0);
-            this._pnlMainCardSpace.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this._pnlMainCardSpace.Name = "_pnlMainCardSpace";
-            this._pnlMainCardSpace.Size = new System.Drawing.Size(425, 255);
-            this._pnlMainCardSpace.TabIndex = 0;
-            // 
-            // _lblTilteSeparSpace
-            // 
-            this._lblTilteSeparSpace.BackColor = System.Drawing.Color.Silver;
-            this._lblTilteSeparSpace.Dock = System.Windows.Forms.DockStyle.Top;
-            this._lblTilteSeparSpace.Location = new System.Drawing.Point(0, 48);
-            this._lblTilteSeparSpace.Name = "_lblTilteSeparSpace";
-            this._lblTilteSeparSpace.Size = new System.Drawing.Size(425, 1);
-            this._lblTilteSeparSpace.TabIndex = 1;
             // 
             // _pnlCardTitle
             // 
             this._pnlCardTitle.BackColor = System.Drawing.Color.Transparent;
             this._pnlCardTitle.Controls.Add(this._lblCardTitle);
-            this._pnlCardTitle.Dock = System.Windows.Forms.DockStyle.Top;
+            this._pnlCardTitle.Dock = System.Windows.Forms.DockStyle.Fill;
             this._pnlCardTitle.Location = new System.Drawing.Point(0, 0);
             this._pnlCardTitle.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this._pnlCardTitle.Name = "_pnlCardTitle";
             this._pnlCardTitle.Size = new System.Drawing.Size(425, 48);
-            this._pnlCardTitle.TabIndex = 0;
+            this._pnlCardTitle.TabIndex = 1;
             // 
             // _lblCardTitle
             // 
@@ -87,11 +63,10 @@
             this.Appearance.Options.UseFont = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this._pnlMainCardSpace);
+            this.Controls.Add(this._pnlCardTitle);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "VMACardGroupBox";
-            this.Size = new System.Drawing.Size(425, 255);
-            this._pnlMainCardSpace.ResumeLayout(false);
+            this.Size = new System.Drawing.Size(425, 48);
             this._pnlCardTitle.ResumeLayout(false);
             this._pnlCardTitle.PerformLayout();
             this.ResumeLayout(false);
@@ -100,9 +75,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel _pnlMainCardSpace;
         private System.Windows.Forms.Panel _pnlCardTitle;
-        private System.Windows.Forms.Label _lblTilteSeparSpace;
         private System.Windows.Forms.Label _lblCardTitle;
     }
 }

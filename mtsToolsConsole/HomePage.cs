@@ -14,20 +14,28 @@ using mtsToolsConsole.Components;
 using mtsToolsConsole.Model;
 using Newtonsoft.Json;
 using mtsToolsConsole.Pages;
+using mtsToolsConsole.Controller;
+using mtsToolsConsole.Libraries;
+using mtsToolsConsole.Repository;
 
 namespace mtsToolsConsole
 {
     public partial class HomePage : DevExpress.XtraEditors.XtraForm
     {
         private bool HomeFullScreen = false;
-
-        public HomePage()
+        private string _userAccountID = string.Empty;
+        private UserController userController = new UserController();
+        public HomePage(string userAccountID)
         {
+            _userAccountID = userAccountID;
             InitializeComponent();
-
+            List<UserMenuItem> userMenuItems = GetUserMenuItems();
+            // 加载用户对应 Navi Menu
+            LoadUserPermissionMenu(userMenuItems);
             InitDefinePage();
         }
 
+        #region UI 相关
         private void _picShowNaviMenu_MouseEnter(object sender, EventArgs e)
         {
             _picShowNaviMenu.BackColor = Color.FromArgb(161, 166, 213);
@@ -99,27 +107,51 @@ namespace mtsToolsConsole
             BugReportPage bugReportPage = new BugReportPage();
             bugReportPage.ShowDialog();
         }
-
-        private void HomePage_Load(object sender, EventArgs e)
+        #endregion
+        
+        private List<UserMenuItem> GetUserMenuItems()
         {
-            // 加载用户对应 Navi Menu
-            LoadUserPermissionMenu();
+            try
+            {
+                WebApiAsyncResponse webApiAsyncResponse = userController.LoadUserMenuTree(_userAccountID);
+                if (webApiAsyncResponse.StatusCode == "200")
+                {
+                    List<UserMenuItem> userMenuItems = JsonConvert.DeserializeObject<List<UserMenuItem>>(webApiAsyncResponse.JsonReValue);
+                    return userMenuItems;
+                }
+                else
+                {
+                    UIPageLoadHelper.GetErrorUIPageForm(webApiAsyncResponse, this).Show();
+                    return null;
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            
         }
 
-        private void LoadUserPermissionMenu()
+        private void LoadUserPermissionMenu(List<UserMenuItem> userMenuItems)
         {
             List<NaviMenuBar> naviMenuBars = new List<NaviMenuBar>();
-            VMAVertNavi vmaVertNavi = new VMAVertNavi();
-            vmaVertNavi.ItemNaviMenuSource = naviMenuBars;
-            vmaVertNavi.Dock = DockStyle.Fill;
+            MenuTreeRepository menuTreeRepository = new MenuTreeRepository();
+            naviMenuBars = menuTreeRepository.ConvertMenuToNaviMenu(userMenuItems);
+            VMAVertNavi vmaVertNavi = new VMAVertNavi
+            {
+                ItemDisplayPage = this._pnlWorkFrame,
+                ItemNaviMenuSource = naviMenuBars,
+                Dock = DockStyle.Fill
+            };
             this._pnlVertNaviBar.Controls.Add(vmaVertNavi);
         }
 
         private void InitDefinePage()
         {
-            Control homepage = new ProdProcessRecord();
-            homepage.Dock = DockStyle.Fill;
-            _pnlWorkFrame.Controls.Add(homepage);
+            //Control homepage = new ProdProcessRecord();
+            //homepage.Dock = DockStyle.Fill;
+            //_pnlWorkFrame.Controls.Add(homepage);
         }
     }
 }

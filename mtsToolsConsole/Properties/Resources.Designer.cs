@@ -63,9 +63,49 @@ namespace mtsToolsConsole.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap _403 {
+            get {
+                object obj = ResourceManager.GetObject("_403", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap _404 {
+            get {
+                object obj = ResourceManager.GetObject("_404", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap _500 {
+            get {
+                object obj = ResourceManager.GetObject("_500", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap baseline_account_circle_white_36dp {
             get {
                 object obj = ResourceManager.GetObject("baseline_account_circle_white_36dp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap baseline_alternate_email_black_24dp {
+            get {
+                object obj = ResourceManager.GetObject("baseline_alternate_email_black_24dp", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -106,6 +146,16 @@ namespace mtsToolsConsole.Properties {
         internal static System.Drawing.Bitmap baseline_dvr_black_24dp {
             get {
                 object obj = ResourceManager.GetObject("baseline_dvr_black_24dp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap baseline_edit_black_24dp {
+            get {
+                object obj = ResourceManager.GetObject("baseline_edit_black_24dp", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -173,6 +223,16 @@ namespace mtsToolsConsole.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap baseline_lock_black_24dp {
+            get {
+                object obj = ResourceManager.GetObject("baseline_lock_black_24dp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap baseline_menu_white_24dp {
             get {
                 object obj = ResourceManager.GetObject("baseline_menu_white_24dp", resourceCulture);
@@ -193,6 +253,26 @@ namespace mtsToolsConsole.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap baseline_perm_identity_black_24dp {
+            get {
+                object obj = ResourceManager.GetObject("baseline_perm_identity_black_24dp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap baseline_phone_black_24dp {
+            get {
+                object obj = ResourceManager.GetObject("baseline_phone_black_24dp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap baseline_store_black_24dp {
             get {
                 object obj = ResourceManager.GetObject("baseline_store_black_24dp", resourceCulture);
@@ -206,6 +286,26 @@ namespace mtsToolsConsole.Properties {
         internal static System.Drawing.Bitmap baseline_view_day_black_24dp {
             get {
                 object obj = ResourceManager.GetObject("baseline_view_day_black_24dp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap baseline_warning_black_24dp {
+            get {
+                object obj = ResourceManager.GetObject("baseline_warning_black_24dp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap easyicon_warning_red_24dp_png {
+            get {
+                object obj = ResourceManager.GetObject("easyicon_warning_red_24dp_png", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -72,5 +72,15 @@ namespace mtsToolsConsole.Components
                 }
             }
         }
+
+        private void _pnlMenuTypeIcon_Click(object sender, EventArgs e)
+        {
+            this.OnClick(e);
+        }
+
+        private void _pnlMenuTypeIcon_MouseDown(object sender, MouseEventArgs e)
+        {
+            this.OnMouseDown(e);
+        }
     }
 }

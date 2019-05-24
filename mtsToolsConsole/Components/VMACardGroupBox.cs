@@ -13,7 +13,6 @@ using System.ComponentModel.Design;
 
 namespace mtsToolsConsole.Components
 {
-    [Designer("System.Windows.Forms.Design.ParentControlDesigner, System.Design", typeof(IDesigner))]
     public partial class VMACardGroupBox : DevExpress.XtraEditors.XtraUserControl
     {
         #region Card Title BackGround
@@ -65,12 +64,6 @@ namespace mtsToolsConsole.Components
         public VMACardGroupBox()
         {
             InitializeComponent();
-            InitializeUserPlace();
-        }
-
-        private void InitializeUserPlace()
-        {
-           
         }
 
         private void InitVMACardGroupBoxUI()

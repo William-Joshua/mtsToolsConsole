@@ -28,17 +28,94 @@
         /// </summary>
         private void InitializeComponent()
         {
+            DevExpress.XtraCharts.XYDiagram xyDiagram1 = new DevExpress.XtraCharts.XYDiagram();
+            DevExpress.XtraCharts.Series series1 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.SideBySideBarSeriesLabel sideBySideBarSeriesLabel1 = new DevExpress.XtraCharts.SideBySideBarSeriesLabel();
+            DevExpress.XtraCharts.SeriesPoint seriesPoint1 = new DevExpress.XtraCharts.SeriesPoint("8:45~9:45", new object[] {
+            ((object)(10D))});
+            DevExpress.XtraCharts.SeriesPoint seriesPoint2 = new DevExpress.XtraCharts.SeriesPoint("9:45~10:45", new object[] {
+            ((object)(20D))});
+            DevExpress.XtraCharts.SeriesPoint seriesPoint3 = new DevExpress.XtraCharts.SeriesPoint("10:45~11:45", new object[] {
+            ((object)(30D))});
+            DevExpress.XtraCharts.SeriesPoint seriesPoint4 = new DevExpress.XtraCharts.SeriesPoint("11:45~13:30", new object[] {
+            ((object)(50D))});
+            DevExpress.XtraCharts.SeriesPoint seriesPoint5 = new DevExpress.XtraCharts.SeriesPoint("13:30~14:30", new object[] {
+            ((object)(20D))});
+            DevExpress.XtraCharts.SeriesPoint seriesPoint6 = new DevExpress.XtraCharts.SeriesPoint("14:30~15:30", new object[] {
+            ((object)(20D))});
+            DevExpress.XtraCharts.SeriesPoint seriesPoint7 = new DevExpress.XtraCharts.SeriesPoint("15:30~16:30", new object[] {
+            ((object)(30D))});
+            DevExpress.XtraCharts.SeriesPoint seriesPoint8 = new DevExpress.XtraCharts.SeriesPoint("16:30~17:30", new object[] {
+            ((object)(60D))});
+            DevExpress.XtraCharts.SeriesPoint seriesPoint9 = new DevExpress.XtraCharts.SeriesPoint("17:30~18:30", new object[] {
+            ((object)(0D))});
+            DevExpress.XtraCharts.SeriesPoint seriesPoint10 = new DevExpress.XtraCharts.SeriesPoint("18:30~19:30", new object[] {
+            ((object)(0D))});
+            DevExpress.XtraCharts.Series series2 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.SeriesPoint seriesPoint11 = new DevExpress.XtraCharts.SeriesPoint("8:45~9:45", new object[] {
+            ((object)(30.2D))});
+            DevExpress.XtraCharts.SeriesPoint seriesPoint12 = new DevExpress.XtraCharts.SeriesPoint("9:45~10:45", new object[] {
+            ((object)(40.2D))});
+            DevExpress.XtraCharts.SeriesPoint seriesPoint13 = new DevExpress.XtraCharts.SeriesPoint("10:45~11:45", new object[] {
+            ((object)(40.2D))});
+            DevExpress.XtraCharts.SeriesPoint seriesPoint14 = new DevExpress.XtraCharts.SeriesPoint("11:45~13:30", new object[] {
+            ((object)(30.5D))});
+            DevExpress.XtraCharts.SeriesPoint seriesPoint15 = new DevExpress.XtraCharts.SeriesPoint("13:30~14:30", new object[] {
+            ((object)(45.5D))});
+            DevExpress.XtraCharts.SeriesPoint seriesPoint16 = new DevExpress.XtraCharts.SeriesPoint("14:30~15:30", new object[] {
+            ((object)(45.7D))});
+            DevExpress.XtraCharts.SeriesPoint seriesPoint17 = new DevExpress.XtraCharts.SeriesPoint("15:30~16:30", new object[] {
+            ((object)(45.6D))});
+            DevExpress.XtraCharts.SeriesPoint seriesPoint18 = new DevExpress.XtraCharts.SeriesPoint("16:30~17:30", new object[] {
+            ((object)(35.2D))});
+            DevExpress.XtraCharts.SeriesPoint seriesPoint19 = new DevExpress.XtraCharts.SeriesPoint("17:30~18:30", new object[] {
+            ((object)(20.5D))});
+            DevExpress.XtraCharts.SeriesPoint seriesPoint20 = new DevExpress.XtraCharts.SeriesPoint("18:30~19:30", new object[] {
+            ((object)(12.5D))});
+            DevExpress.XtraCharts.SplineSeriesView splineSeriesView1 = new DevExpress.XtraCharts.SplineSeriesView();
+            DevExpress.XtraCharts.Series series3 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.SeriesPoint seriesPoint21 = new DevExpress.XtraCharts.SeriesPoint("8:45~9:45", new object[] {
+            ((object)(36.1D))});
+            DevExpress.XtraCharts.SeriesPoint seriesPoint22 = new DevExpress.XtraCharts.SeriesPoint("9:45~10:45", new object[] {
+            ((object)(36.5D))});
+            DevExpress.XtraCharts.SeriesPoint seriesPoint23 = new DevExpress.XtraCharts.SeriesPoint("10:45~11:45", new object[] {
+            ((object)(40.2D))});
+            DevExpress.XtraCharts.SeriesPoint seriesPoint24 = new DevExpress.XtraCharts.SeriesPoint("11:45~13:30", new object[] {
+            ((object)(26.5D))});
+            DevExpress.XtraCharts.SeriesPoint seriesPoint25 = new DevExpress.XtraCharts.SeriesPoint("13:30~14:30", new object[] {
+            ((object)(36.8D))});
+            DevExpress.XtraCharts.SeriesPoint seriesPoint26 = new DevExpress.XtraCharts.SeriesPoint("14:30~15:30", new object[] {
+            ((object)(40.5D))});
+            DevExpress.XtraCharts.SeriesPoint seriesPoint27 = new DevExpress.XtraCharts.SeriesPoint("15:30~16:30", new object[] {
+            ((object)(40.6D))});
+            DevExpress.XtraCharts.SeriesPoint seriesPoint28 = new DevExpress.XtraCharts.SeriesPoint("16:30~17:30", new object[] {
+            ((object)(23.5D))});
+            DevExpress.XtraCharts.SeriesPoint seriesPoint29 = new DevExpress.XtraCharts.SeriesPoint("17:30~18:30", new object[] {
+            ((object)(10.5D))});
+            DevExpress.XtraCharts.SeriesPoint seriesPoint30 = new DevExpress.XtraCharts.SeriesPoint("18:30~19:30", new object[] {
+            ((object)(0D))});
+            DevExpress.XtraCharts.SplineSeriesView splineSeriesView2 = new DevExpress.XtraCharts.SplineSeriesView();
             this._pnlPPRMainWork = new System.Windows.Forms.Panel();
             this._pnlMainConsole = new System.Windows.Forms.Panel();
             this._pnlCmdRight = new System.Windows.Forms.Panel();
-            this._vcgRecordStatus = new mtsToolsConsole.Components.VMACardGroupBox();
-            this._pnlCmdRightMarBottom = new System.Windows.Forms.Panel();
-            this._pnlCmdRightMarTop = new System.Windows.Forms.Panel();
-            this._pnlCmdSepar = new System.Windows.Forms.Panel();
-            this._pnlCmdLeft = new System.Windows.Forms.Panel();
-            this._pnlRecordMarginBottom = new System.Windows.Forms.Panel();
-            this._vcgRecordConsole = new mtsToolsConsole.Components.VMACardGroupBox();
-            this._pnlRecordMarginTop = new System.Windows.Forms.Panel();
+            this._pnlProcessStatus = new System.Windows.Forms.Panel();
+            this._pnlProcessStatusMain = new System.Windows.Forms.Panel();
+            this._pnlProcessStatusSpace = new System.Windows.Forms.Panel();
+            this._chartProcessStatus = new DevExpress.XtraCharts.ChartControl();
+            this._vcgProcessStatus = new mtsToolsConsole.Components.VMACardGroupBox();
+            this._pnlProcessStatusBottom = new System.Windows.Forms.Panel();
+            this._pnlProcessStatusTop = new System.Windows.Forms.Panel();
+            this._pnlSeparRecord = new System.Windows.Forms.Panel();
+            this._pnlProcessRecord = new System.Windows.Forms.Panel();
+            this._pnlProcessRecordBottom = new System.Windows.Forms.Panel();
+            this._pnlProcessRecordMain = new System.Windows.Forms.Panel();
+            this._pnlProcessRecordSpace = new System.Windows.Forms.Panel();
+            this._vtbDeviceSN = new mtsToolsConsole.Components.VMATextInput();
+            this._lblDeviceSN = new System.Windows.Forms.Label();
+            this._vcgProcessRecord = new mtsToolsConsole.Components.VMACardGroupBox();
+            this._pnlProcessRecordTop = new System.Windows.Forms.Panel();
+            this._pnlWorkOrderInfo = new System.Windows.Forms.Panel();
+            this._pnlWorkOrderSpace = new System.Windows.Forms.Panel();
             this._vcgWorkOrderInfo = new mtsToolsConsole.Components.VMACardGroupBox();
             this._pnlMarginRight = new System.Windows.Forms.Panel();
             this._pnlMarginLeft = new System.Windows.Forms.Panel();
@@ -52,7 +129,21 @@
             this._pnlPPRMainWork.SuspendLayout();
             this._pnlMainConsole.SuspendLayout();
             this._pnlCmdRight.SuspendLayout();
-            this._pnlCmdLeft.SuspendLayout();
+            this._pnlProcessStatus.SuspendLayout();
+            this._pnlProcessStatusMain.SuspendLayout();
+            this._pnlProcessStatusSpace.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this._chartProcessStatus)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesLabel1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(splineSeriesView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(splineSeriesView2)).BeginInit();
+            this._pnlProcessRecord.SuspendLayout();
+            this._pnlProcessRecordMain.SuspendLayout();
+            this._pnlProcessRecordSpace.SuspendLayout();
+            this._pnlWorkOrderInfo.SuspendLayout();
             this._pnlFloatHeadState.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this._picHomeIcon.Properties)).BeginInit();
             this.SuspendLayout();
@@ -61,7 +152,6 @@
             // 
             this._pnlPPRMainWork.BackColor = System.Drawing.Color.WhiteSmoke;
             this._pnlPPRMainWork.Controls.Add(this._pnlMainConsole);
-            this._pnlPPRMainWork.Controls.Add(this._vcgWorkOrderInfo);
             this._pnlPPRMainWork.Controls.Add(this._pnlMarginRight);
             this._pnlPPRMainWork.Controls.Add(this._pnlMarginLeft);
             this._pnlPPRMainWork.Controls.Add(this._pnlFloatHeadState);
@@ -75,112 +165,262 @@
             // _pnlMainConsole
             // 
             this._pnlMainConsole.Controls.Add(this._pnlCmdRight);
-            this._pnlMainConsole.Controls.Add(this._pnlCmdSepar);
-            this._pnlMainConsole.Controls.Add(this._pnlCmdLeft);
             this._pnlMainConsole.Dock = System.Windows.Forms.DockStyle.Fill;
-            this._pnlMainConsole.Location = new System.Drawing.Point(24, 194);
+            this._pnlMainConsole.Location = new System.Drawing.Point(24, 64);
             this._pnlMainConsole.Name = "_pnlMainConsole";
-            this._pnlMainConsole.Size = new System.Drawing.Size(754, 478);
+            this._pnlMainConsole.Size = new System.Drawing.Size(754, 608);
             this._pnlMainConsole.TabIndex = 5;
             // 
             // _pnlCmdRight
             // 
-            this._pnlCmdRight.Controls.Add(this._vcgRecordStatus);
-            this._pnlCmdRight.Controls.Add(this._pnlCmdRightMarBottom);
-            this._pnlCmdRight.Controls.Add(this._pnlCmdRightMarTop);
+            this._pnlCmdRight.Controls.Add(this._pnlProcessStatus);
+            this._pnlCmdRight.Controls.Add(this._pnlSeparRecord);
+            this._pnlCmdRight.Controls.Add(this._pnlProcessRecord);
+            this._pnlCmdRight.Controls.Add(this._pnlWorkOrderInfo);
             this._pnlCmdRight.Dock = System.Windows.Forms.DockStyle.Fill;
-            this._pnlCmdRight.Location = new System.Drawing.Point(359, 0);
+            this._pnlCmdRight.Location = new System.Drawing.Point(0, 0);
             this._pnlCmdRight.Name = "_pnlCmdRight";
-            this._pnlCmdRight.Size = new System.Drawing.Size(395, 478);
+            this._pnlCmdRight.Size = new System.Drawing.Size(754, 608);
             this._pnlCmdRight.TabIndex = 2;
             // 
-            // _vcgRecordStatus
+            // _pnlProcessStatus
             // 
-            this._vcgRecordStatus.Appearance.BackColor = System.Drawing.Color.White;
-            this._vcgRecordStatus.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this._vcgRecordStatus.Appearance.Options.UseBackColor = true;
-            this._vcgRecordStatus.Appearance.Options.UseFont = true;
-            this._vcgRecordStatus.CardTitleBackGround = "63, 81, 181";
-            this._vcgRecordStatus.CardTitleForeColor = "255, 255, 255";
-            this._vcgRecordStatus.CardTitleText = "实时状态";
-            this._vcgRecordStatus.Dock = System.Windows.Forms.DockStyle.Fill;
-            this._vcgRecordStatus.Location = new System.Drawing.Point(0, 24);
-            this._vcgRecordStatus.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this._vcgRecordStatus.Name = "_vcgRecordStatus";
-            this._vcgRecordStatus.Size = new System.Drawing.Size(395, 430);
-            this._vcgRecordStatus.TabIndex = 3;
+            this._pnlProcessStatus.Controls.Add(this._pnlProcessStatusMain);
+            this._pnlProcessStatus.Controls.Add(this._pnlProcessStatusBottom);
+            this._pnlProcessStatus.Controls.Add(this._pnlProcessStatusTop);
+            this._pnlProcessStatus.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._pnlProcessStatus.Location = new System.Drawing.Point(382, 127);
+            this._pnlProcessStatus.Name = "_pnlProcessStatus";
+            this._pnlProcessStatus.Size = new System.Drawing.Size(372, 481);
+            this._pnlProcessStatus.TabIndex = 4;
             // 
-            // _pnlCmdRightMarBottom
+            // _pnlProcessStatusMain
             // 
-            this._pnlCmdRightMarBottom.BackColor = System.Drawing.Color.Transparent;
-            this._pnlCmdRightMarBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this._pnlCmdRightMarBottom.Location = new System.Drawing.Point(0, 454);
-            this._pnlCmdRightMarBottom.Name = "_pnlCmdRightMarBottom";
-            this._pnlCmdRightMarBottom.Size = new System.Drawing.Size(395, 24);
-            this._pnlCmdRightMarBottom.TabIndex = 2;
+            this._pnlProcessStatusMain.Controls.Add(this._pnlProcessStatusSpace);
+            this._pnlProcessStatusMain.Controls.Add(this._vcgProcessStatus);
+            this._pnlProcessStatusMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._pnlProcessStatusMain.Location = new System.Drawing.Point(0, 12);
+            this._pnlProcessStatusMain.Name = "_pnlProcessStatusMain";
+            this._pnlProcessStatusMain.Size = new System.Drawing.Size(372, 433);
+            this._pnlProcessStatusMain.TabIndex = 2;
             // 
-            // _pnlCmdRightMarTop
+            // _pnlProcessStatusSpace
             // 
-            this._pnlCmdRightMarTop.BackColor = System.Drawing.Color.Transparent;
-            this._pnlCmdRightMarTop.Dock = System.Windows.Forms.DockStyle.Top;
-            this._pnlCmdRightMarTop.Location = new System.Drawing.Point(0, 0);
-            this._pnlCmdRightMarTop.Name = "_pnlCmdRightMarTop";
-            this._pnlCmdRightMarTop.Size = new System.Drawing.Size(395, 24);
-            this._pnlCmdRightMarTop.TabIndex = 1;
+            this._pnlProcessStatusSpace.BackColor = System.Drawing.Color.White;
+            this._pnlProcessStatusSpace.Controls.Add(this._chartProcessStatus);
+            this._pnlProcessStatusSpace.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._pnlProcessStatusSpace.Location = new System.Drawing.Point(0, 49);
+            this._pnlProcessStatusSpace.Name = "_pnlProcessStatusSpace";
+            this._pnlProcessStatusSpace.Size = new System.Drawing.Size(372, 384);
+            this._pnlProcessStatusSpace.TabIndex = 3;
             // 
-            // _pnlCmdSepar
+            // _chartProcessStatus
             // 
-            this._pnlCmdSepar.BackColor = System.Drawing.Color.Transparent;
-            this._pnlCmdSepar.Dock = System.Windows.Forms.DockStyle.Left;
-            this._pnlCmdSepar.Location = new System.Drawing.Point(321, 0);
-            this._pnlCmdSepar.Name = "_pnlCmdSepar";
-            this._pnlCmdSepar.Size = new System.Drawing.Size(38, 478);
-            this._pnlCmdSepar.TabIndex = 1;
+            xyDiagram1.AxisX.Label.Angle = 30;
+            xyDiagram1.AxisX.MinorCount = 1;
+            xyDiagram1.AxisX.VisibleInPanesSerializable = "-1";
+            xyDiagram1.AxisY.VisibleInPanesSerializable = "-1";
+            this._chartProcessStatus.Diagram = xyDiagram1;
+            this._chartProcessStatus.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._chartProcessStatus.Legend.Name = "Default Legend";
+            this._chartProcessStatus.Legend.Visibility = DevExpress.Utils.DefaultBoolean.False;
+            this._chartProcessStatus.Location = new System.Drawing.Point(0, 0);
+            this._chartProcessStatus.Name = "_chartProcessStatus";
+            series1.CrosshairLabelVisibility = DevExpress.Utils.DefaultBoolean.True;
+            sideBySideBarSeriesLabel1.TextAlignment = System.Drawing.StringAlignment.Near;
+            sideBySideBarSeriesLabel1.TextOrientation = DevExpress.XtraCharts.TextOrientation.TopToBottom;
+            series1.Label = sideBySideBarSeriesLabel1;
+            series1.LegendName = "Default Legend";
+            series1.Name = "日产量";
+            series1.Points.AddRange(new DevExpress.XtraCharts.SeriesPoint[] {
+            seriesPoint1,
+            seriesPoint2,
+            seriesPoint3,
+            seriesPoint4,
+            seriesPoint5,
+            seriesPoint6,
+            seriesPoint7,
+            seriesPoint8,
+            seriesPoint9,
+            seriesPoint10});
+            series2.Name = "上季度日平均";
+            series2.Points.AddRange(new DevExpress.XtraCharts.SeriesPoint[] {
+            seriesPoint11,
+            seriesPoint12,
+            seriesPoint13,
+            seriesPoint14,
+            seriesPoint15,
+            seriesPoint16,
+            seriesPoint17,
+            seriesPoint18,
+            seriesPoint19,
+            seriesPoint20});
+            series2.View = splineSeriesView1;
+            series3.Name = "本月日平均";
+            series3.Points.AddRange(new DevExpress.XtraCharts.SeriesPoint[] {
+            seriesPoint21,
+            seriesPoint22,
+            seriesPoint23,
+            seriesPoint24,
+            seriesPoint25,
+            seriesPoint26,
+            seriesPoint27,
+            seriesPoint28,
+            seriesPoint29,
+            seriesPoint30});
+            series3.View = splineSeriesView2;
+            this._chartProcessStatus.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
+        series1,
+        series2,
+        series3};
+            this._chartProcessStatus.Size = new System.Drawing.Size(372, 384);
+            this._chartProcessStatus.TabIndex = 0;
+            this._chartProcessStatus.Resize += new System.EventHandler(this._chartProcessStatus_Resize);
             // 
-            // _pnlCmdLeft
+            // _vcgProcessStatus
             // 
-            this._pnlCmdLeft.BackColor = System.Drawing.Color.Transparent;
-            this._pnlCmdLeft.Controls.Add(this._pnlRecordMarginBottom);
-            this._pnlCmdLeft.Controls.Add(this._vcgRecordConsole);
-            this._pnlCmdLeft.Controls.Add(this._pnlRecordMarginTop);
-            this._pnlCmdLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this._pnlCmdLeft.Location = new System.Drawing.Point(0, 0);
-            this._pnlCmdLeft.Name = "_pnlCmdLeft";
-            this._pnlCmdLeft.Size = new System.Drawing.Size(321, 478);
-            this._pnlCmdLeft.TabIndex = 0;
+            this._vcgProcessStatus.Appearance.BackColor = System.Drawing.Color.White;
+            this._vcgProcessStatus.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._vcgProcessStatus.Appearance.Options.UseBackColor = true;
+            this._vcgProcessStatus.Appearance.Options.UseFont = true;
+            this._vcgProcessStatus.CardTitleBackGround = "96, 125, 139";
+            this._vcgProcessStatus.CardTitleForeColor = "255, 255, 255";
+            this._vcgProcessStatus.CardTitleText = "实时工艺状态";
+            this._vcgProcessStatus.Dock = System.Windows.Forms.DockStyle.Top;
+            this._vcgProcessStatus.Location = new System.Drawing.Point(0, 0);
+            this._vcgProcessStatus.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this._vcgProcessStatus.Name = "_vcgProcessStatus";
+            this._vcgProcessStatus.Size = new System.Drawing.Size(372, 49);
+            this._vcgProcessStatus.TabIndex = 1;
             // 
-            // _pnlRecordMarginBottom
+            // _pnlProcessStatusBottom
             // 
-            this._pnlRecordMarginBottom.Dock = System.Windows.Forms.DockStyle.Fill;
-            this._pnlRecordMarginBottom.Location = new System.Drawing.Point(0, 442);
-            this._pnlRecordMarginBottom.Name = "_pnlRecordMarginBottom";
-            this._pnlRecordMarginBottom.Size = new System.Drawing.Size(321, 36);
-            this._pnlRecordMarginBottom.TabIndex = 3;
+            this._pnlProcessStatusBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this._pnlProcessStatusBottom.Location = new System.Drawing.Point(0, 445);
+            this._pnlProcessStatusBottom.Name = "_pnlProcessStatusBottom";
+            this._pnlProcessStatusBottom.Size = new System.Drawing.Size(372, 36);
+            this._pnlProcessStatusBottom.TabIndex = 1;
             // 
-            // _vcgRecordConsole
+            // _pnlProcessStatusTop
             // 
-            this._vcgRecordConsole.Appearance.BackColor = System.Drawing.Color.White;
-            this._vcgRecordConsole.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this._vcgRecordConsole.Appearance.Options.UseBackColor = true;
-            this._vcgRecordConsole.Appearance.Options.UseFont = true;
-            this._vcgRecordConsole.CardTitleBackGround = "0, 188, 212";
-            this._vcgRecordConsole.CardTitleForeColor = "255, 255, 255";
-            this._vcgRecordConsole.CardTitleText = "操作台";
-            this._vcgRecordConsole.Dock = System.Windows.Forms.DockStyle.Top;
-            this._vcgRecordConsole.Location = new System.Drawing.Point(0, 37);
-            this._vcgRecordConsole.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this._vcgRecordConsole.Name = "_vcgRecordConsole";
-            this._vcgRecordConsole.Size = new System.Drawing.Size(321, 405);
-            this._vcgRecordConsole.TabIndex = 2;
+            this._pnlProcessStatusTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this._pnlProcessStatusTop.Location = new System.Drawing.Point(0, 0);
+            this._pnlProcessStatusTop.Name = "_pnlProcessStatusTop";
+            this._pnlProcessStatusTop.Size = new System.Drawing.Size(372, 12);
+            this._pnlProcessStatusTop.TabIndex = 0;
             // 
-            // _pnlRecordMarginTop
+            // _pnlSeparRecord
             // 
-            this._pnlRecordMarginTop.BackColor = System.Drawing.Color.Transparent;
-            this._pnlRecordMarginTop.Dock = System.Windows.Forms.DockStyle.Top;
-            this._pnlRecordMarginTop.Location = new System.Drawing.Point(0, 0);
-            this._pnlRecordMarginTop.Name = "_pnlRecordMarginTop";
-            this._pnlRecordMarginTop.Size = new System.Drawing.Size(321, 37);
-            this._pnlRecordMarginTop.TabIndex = 0;
+            this._pnlSeparRecord.Dock = System.Windows.Forms.DockStyle.Left;
+            this._pnlSeparRecord.Location = new System.Drawing.Point(350, 127);
+            this._pnlSeparRecord.Name = "_pnlSeparRecord";
+            this._pnlSeparRecord.Size = new System.Drawing.Size(32, 481);
+            this._pnlSeparRecord.TabIndex = 2;
+            // 
+            // _pnlProcessRecord
+            // 
+            this._pnlProcessRecord.Controls.Add(this._pnlProcessRecordBottom);
+            this._pnlProcessRecord.Controls.Add(this._pnlProcessRecordMain);
+            this._pnlProcessRecord.Controls.Add(this._pnlProcessRecordTop);
+            this._pnlProcessRecord.Dock = System.Windows.Forms.DockStyle.Left;
+            this._pnlProcessRecord.Location = new System.Drawing.Point(0, 127);
+            this._pnlProcessRecord.Name = "_pnlProcessRecord";
+            this._pnlProcessRecord.Size = new System.Drawing.Size(350, 481);
+            this._pnlProcessRecord.TabIndex = 1;
+            // 
+            // _pnlProcessRecordBottom
+            // 
+            this._pnlProcessRecordBottom.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._pnlProcessRecordBottom.Location = new System.Drawing.Point(0, 430);
+            this._pnlProcessRecordBottom.Name = "_pnlProcessRecordBottom";
+            this._pnlProcessRecordBottom.Size = new System.Drawing.Size(350, 51);
+            this._pnlProcessRecordBottom.TabIndex = 2;
+            // 
+            // _pnlProcessRecordMain
+            // 
+            this._pnlProcessRecordMain.Controls.Add(this._pnlProcessRecordSpace);
+            this._pnlProcessRecordMain.Controls.Add(this._vcgProcessRecord);
+            this._pnlProcessRecordMain.Dock = System.Windows.Forms.DockStyle.Top;
+            this._pnlProcessRecordMain.Location = new System.Drawing.Point(0, 24);
+            this._pnlProcessRecordMain.Name = "_pnlProcessRecordMain";
+            this._pnlProcessRecordMain.Size = new System.Drawing.Size(350, 406);
+            this._pnlProcessRecordMain.TabIndex = 1;
+            // 
+            // _pnlProcessRecordSpace
+            // 
+            this._pnlProcessRecordSpace.BackColor = System.Drawing.Color.White;
+            this._pnlProcessRecordSpace.Controls.Add(this._vtbDeviceSN);
+            this._pnlProcessRecordSpace.Controls.Add(this._lblDeviceSN);
+            this._pnlProcessRecordSpace.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._pnlProcessRecordSpace.Location = new System.Drawing.Point(0, 49);
+            this._pnlProcessRecordSpace.Name = "_pnlProcessRecordSpace";
+            this._pnlProcessRecordSpace.Size = new System.Drawing.Size(350, 357);
+            this._pnlProcessRecordSpace.TabIndex = 2;
+            // 
+            // _vtbDeviceSN
+            // 
+            this._vtbDeviceSN.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._vtbDeviceSN.Appearance.Options.UseFont = true;
+            this._vtbDeviceSN.InputTitleForeColor = "54, 68, 186";
+            this._vtbDeviceSN.Location = new System.Drawing.Point(92, 4);
+            this._vtbDeviceSN.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this._vtbDeviceSN.Name = "_vtbDeviceSN";
+            this._vtbDeviceSN.Size = new System.Drawing.Size(240, 48);
+            this._vtbDeviceSN.TabIndex = 11;
+            this._vtbDeviceSN.TextInputTitle = "产品条码";
+            this._vtbDeviceSN.TextInputValue = "";
+            // 
+            // _lblDeviceSN
+            // 
+            this._lblDeviceSN.AutoSize = true;
+            this._lblDeviceSN.Location = new System.Drawing.Point(19, 25);
+            this._lblDeviceSN.Name = "_lblDeviceSN";
+            this._lblDeviceSN.Size = new System.Drawing.Size(67, 17);
+            this._lblDeviceSN.TabIndex = 8;
+            this._lblDeviceSN.Text = "产品条码 : ";
+            // 
+            // _vcgProcessRecord
+            // 
+            this._vcgProcessRecord.Appearance.BackColor = System.Drawing.Color.White;
+            this._vcgProcessRecord.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._vcgProcessRecord.Appearance.Options.UseBackColor = true;
+            this._vcgProcessRecord.Appearance.Options.UseFont = true;
+            this._vcgProcessRecord.CardTitleBackGround = "0, 188, 212";
+            this._vcgProcessRecord.CardTitleForeColor = "255, 255, 255";
+            this._vcgProcessRecord.CardTitleText = "工艺流转记录";
+            this._vcgProcessRecord.Dock = System.Windows.Forms.DockStyle.Top;
+            this._vcgProcessRecord.Location = new System.Drawing.Point(0, 0);
+            this._vcgProcessRecord.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this._vcgProcessRecord.Name = "_vcgProcessRecord";
+            this._vcgProcessRecord.Size = new System.Drawing.Size(350, 49);
+            this._vcgProcessRecord.TabIndex = 0;
+            // 
+            // _pnlProcessRecordTop
+            // 
+            this._pnlProcessRecordTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this._pnlProcessRecordTop.Location = new System.Drawing.Point(0, 0);
+            this._pnlProcessRecordTop.Name = "_pnlProcessRecordTop";
+            this._pnlProcessRecordTop.Size = new System.Drawing.Size(350, 24);
+            this._pnlProcessRecordTop.TabIndex = 0;
+            // 
+            // _pnlWorkOrderInfo
+            // 
+            this._pnlWorkOrderInfo.Controls.Add(this._pnlWorkOrderSpace);
+            this._pnlWorkOrderInfo.Controls.Add(this._vcgWorkOrderInfo);
+            this._pnlWorkOrderInfo.Dock = System.Windows.Forms.DockStyle.Top;
+            this._pnlWorkOrderInfo.Location = new System.Drawing.Point(0, 0);
+            this._pnlWorkOrderInfo.Name = "_pnlWorkOrderInfo";
+            this._pnlWorkOrderInfo.Size = new System.Drawing.Size(754, 127);
+            this._pnlWorkOrderInfo.TabIndex = 0;
+            // 
+            // _pnlWorkOrderSpace
+            // 
+            this._pnlWorkOrderSpace.BackColor = System.Drawing.Color.White;
+            this._pnlWorkOrderSpace.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._pnlWorkOrderSpace.Location = new System.Drawing.Point(0, 48);
+            this._pnlWorkOrderSpace.Name = "_pnlWorkOrderSpace";
+            this._pnlWorkOrderSpace.Size = new System.Drawing.Size(754, 79);
+            this._pnlWorkOrderSpace.TabIndex = 1;
             // 
             // _vcgWorkOrderInfo
             // 
@@ -189,14 +429,14 @@
             this._vcgWorkOrderInfo.Appearance.Options.UseBackColor = true;
             this._vcgWorkOrderInfo.Appearance.Options.UseFont = true;
             this._vcgWorkOrderInfo.CardTitleBackGround = "0, 150, 136";
-            this._vcgWorkOrderInfo.CardTitleForeColor = "245, 245, 245";
+            this._vcgWorkOrderInfo.CardTitleForeColor = "255, 255, 255";
             this._vcgWorkOrderInfo.CardTitleText = "工单信息提示";
             this._vcgWorkOrderInfo.Dock = System.Windows.Forms.DockStyle.Top;
-            this._vcgWorkOrderInfo.Location = new System.Drawing.Point(24, 64);
+            this._vcgWorkOrderInfo.Location = new System.Drawing.Point(0, 0);
             this._vcgWorkOrderInfo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this._vcgWorkOrderInfo.Name = "_vcgWorkOrderInfo";
-            this._vcgWorkOrderInfo.Size = new System.Drawing.Size(754, 130);
-            this._vcgWorkOrderInfo.TabIndex = 4;
+            this._vcgWorkOrderInfo.Size = new System.Drawing.Size(754, 48);
+            this._vcgWorkOrderInfo.TabIndex = 0;
             // 
             // _pnlMarginRight
             // 
@@ -309,7 +549,22 @@
             this._pnlPPRMainWork.ResumeLayout(false);
             this._pnlMainConsole.ResumeLayout(false);
             this._pnlCmdRight.ResumeLayout(false);
-            this._pnlCmdLeft.ResumeLayout(false);
+            this._pnlProcessStatus.ResumeLayout(false);
+            this._pnlProcessStatusMain.ResumeLayout(false);
+            this._pnlProcessStatusSpace.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesLabel1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(splineSeriesView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(splineSeriesView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._chartProcessStatus)).EndInit();
+            this._pnlProcessRecord.ResumeLayout(false);
+            this._pnlProcessRecordMain.ResumeLayout(false);
+            this._pnlProcessRecordSpace.ResumeLayout(false);
+            this._pnlProcessRecordSpace.PerformLayout();
+            this._pnlWorkOrderInfo.ResumeLayout(false);
             this._pnlFloatHeadState.ResumeLayout(false);
             this._pnlFloatHeadState.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this._picHomeIcon.Properties)).EndInit();
@@ -327,18 +582,28 @@
         private System.Windows.Forms.Label _lblIconSeparMain;
         private System.Windows.Forms.Label _lblSubPageTitle;
         private System.Windows.Forms.Label _lblMainSeparSub;
-        private Components.VMACardGroupBox _vcgWorkOrderInfo;
         private System.Windows.Forms.Panel _pnlMarginRight;
         private System.Windows.Forms.Panel _pnlMarginLeft;
         private System.Windows.Forms.Panel _pnlMainConsole;
         private System.Windows.Forms.Panel _pnlCmdRight;
-        private Components.VMACardGroupBox _vcgRecordStatus;
-        private System.Windows.Forms.Panel _pnlCmdRightMarBottom;
-        private System.Windows.Forms.Panel _pnlCmdRightMarTop;
-        private System.Windows.Forms.Panel _pnlCmdSepar;
-        private System.Windows.Forms.Panel _pnlCmdLeft;
-        private System.Windows.Forms.Panel _pnlRecordMarginBottom;
-        private Components.VMACardGroupBox _vcgRecordConsole;
-        private System.Windows.Forms.Panel _pnlRecordMarginTop;
+        private System.Windows.Forms.Panel _pnlWorkOrderInfo;
+        private Components.VMACardGroupBox _vcgWorkOrderInfo;
+        private System.Windows.Forms.Panel _pnlProcessRecord;
+        private System.Windows.Forms.Panel _pnlWorkOrderSpace;
+        private System.Windows.Forms.Panel _pnlProcessStatus;
+        private System.Windows.Forms.Panel _pnlSeparRecord;
+        private System.Windows.Forms.Panel _pnlProcessStatusMain;
+        private System.Windows.Forms.Panel _pnlProcessStatusBottom;
+        private System.Windows.Forms.Panel _pnlProcessStatusTop;
+        private System.Windows.Forms.Panel _pnlProcessRecordBottom;
+        private System.Windows.Forms.Panel _pnlProcessRecordMain;
+        private System.Windows.Forms.Panel _pnlProcessRecordTop;
+        private Components.VMACardGroupBox _vcgProcessStatus;
+        private System.Windows.Forms.Panel _pnlProcessRecordSpace;
+        private Components.VMACardGroupBox _vcgProcessRecord;
+        private System.Windows.Forms.Panel _pnlProcessStatusSpace;
+        private DevExpress.XtraCharts.ChartControl _chartProcessStatus;
+        private System.Windows.Forms.Label _lblDeviceSN;
+        private Components.VMATextInput _vtbDeviceSN;
     }
 }

@@ -32,14 +32,14 @@
             this._pnlMenuItemTitle = new System.Windows.Forms.Panel();
             this._lblMenuItemTitle = new System.Windows.Forms.Label();
             this._pnlSubMenuExpand = new System.Windows.Forms.Panel();
-            this._pnlMenuTypeIcon = new System.Windows.Forms.Panel();
             this._picSubMenuExpand = new DevExpress.XtraEditors.PictureEdit();
+            this._pnlMenuTypeIcon = new System.Windows.Forms.Panel();
             this._picMenuTypeIcon = new DevExpress.XtraEditors.PictureEdit();
             this._pnlMenuItem.SuspendLayout();
             this._pnlMenuItemTitle.SuspendLayout();
             this._pnlSubMenuExpand.SuspendLayout();
-            this._pnlMenuTypeIcon.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this._picSubMenuExpand.Properties)).BeginInit();
+            this._pnlMenuTypeIcon.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this._picMenuTypeIcon.Properties)).BeginInit();
             this.SuspendLayout();
             // 
@@ -65,6 +65,8 @@
             this._pnlMenuItemTitle.Name = "_pnlMenuItemTitle";
             this._pnlMenuItemTitle.Size = new System.Drawing.Size(156, 40);
             this._pnlMenuItemTitle.TabIndex = 2;
+            this._pnlMenuItemTitle.Click += new System.EventHandler(this._pnlMenuTypeIcon_Click);
+            this._pnlMenuItemTitle.MouseDown += new System.Windows.Forms.MouseEventHandler(this._pnlMenuTypeIcon_MouseDown);
             // 
             // _lblMenuItemTitle
             // 
@@ -75,6 +77,8 @@
             this._lblMenuItemTitle.Size = new System.Drawing.Size(76, 17);
             this._lblMenuItemTitle.TabIndex = 0;
             this._lblMenuItemTitle.Text = "ITem Name";
+            this._lblMenuItemTitle.Click += new System.EventHandler(this._pnlMenuTypeIcon_Click);
+            this._lblMenuItemTitle.MouseDown += new System.Windows.Forms.MouseEventHandler(this._pnlMenuTypeIcon_MouseDown);
             // 
             // _pnlSubMenuExpand
             // 
@@ -85,16 +89,8 @@
             this._pnlSubMenuExpand.Name = "_pnlSubMenuExpand";
             this._pnlSubMenuExpand.Size = new System.Drawing.Size(48, 40);
             this._pnlSubMenuExpand.TabIndex = 1;
-            // 
-            // _pnlMenuTypeIcon
-            // 
-            this._pnlMenuTypeIcon.Controls.Add(this._picMenuTypeIcon);
-            this._pnlMenuTypeIcon.Dock = System.Windows.Forms.DockStyle.Left;
-            this._pnlMenuTypeIcon.Location = new System.Drawing.Point(0, 0);
-            this._pnlMenuTypeIcon.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this._pnlMenuTypeIcon.Name = "_pnlMenuTypeIcon";
-            this._pnlMenuTypeIcon.Size = new System.Drawing.Size(56, 40);
-            this._pnlMenuTypeIcon.TabIndex = 0;
+            this._pnlSubMenuExpand.Click += new System.EventHandler(this._pnlMenuTypeIcon_Click);
+            this._pnlSubMenuExpand.MouseDown += new System.Windows.Forms.MouseEventHandler(this._pnlMenuTypeIcon_MouseDown);
             // 
             // _picSubMenuExpand
             // 
@@ -108,6 +104,20 @@
             this._picSubMenuExpand.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this._picSubMenuExpand.Size = new System.Drawing.Size(32, 32);
             this._picSubMenuExpand.TabIndex = 0;
+            this._picSubMenuExpand.Click += new System.EventHandler(this._pnlMenuTypeIcon_Click);
+            this._picSubMenuExpand.MouseDown += new System.Windows.Forms.MouseEventHandler(this._pnlMenuTypeIcon_MouseDown);
+            // 
+            // _pnlMenuTypeIcon
+            // 
+            this._pnlMenuTypeIcon.Controls.Add(this._picMenuTypeIcon);
+            this._pnlMenuTypeIcon.Dock = System.Windows.Forms.DockStyle.Left;
+            this._pnlMenuTypeIcon.Location = new System.Drawing.Point(0, 0);
+            this._pnlMenuTypeIcon.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this._pnlMenuTypeIcon.Name = "_pnlMenuTypeIcon";
+            this._pnlMenuTypeIcon.Size = new System.Drawing.Size(56, 40);
+            this._pnlMenuTypeIcon.TabIndex = 0;
+            this._pnlMenuTypeIcon.Click += new System.EventHandler(this._pnlMenuTypeIcon_Click);
+            this._pnlMenuTypeIcon.MouseDown += new System.Windows.Forms.MouseEventHandler(this._pnlMenuTypeIcon_MouseDown);
             // 
             // _picMenuTypeIcon
             // 
@@ -121,6 +131,8 @@
             this._picMenuTypeIcon.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this._picMenuTypeIcon.Size = new System.Drawing.Size(32, 32);
             this._picMenuTypeIcon.TabIndex = 0;
+            this._picMenuTypeIcon.Click += new System.EventHandler(this._pnlMenuTypeIcon_Click);
+            this._picMenuTypeIcon.MouseDown += new System.Windows.Forms.MouseEventHandler(this._pnlMenuTypeIcon_MouseDown);
             // 
             // VMAVertMenuItem
             // 
@@ -138,8 +150,8 @@
             this._pnlMenuItemTitle.ResumeLayout(false);
             this._pnlMenuItemTitle.PerformLayout();
             this._pnlSubMenuExpand.ResumeLayout(false);
-            this._pnlMenuTypeIcon.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this._picSubMenuExpand.Properties)).EndInit();
+            this._pnlMenuTypeIcon.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this._picMenuTypeIcon.Properties)).EndInit();
             this.ResumeLayout(false);
 

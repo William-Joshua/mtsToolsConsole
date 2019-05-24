@@ -17,5 +17,17 @@ namespace mtsToolsConsole.Pages
         {
             InitializeComponent();
         }
+
+        private void _chartProcessStatus_Resize(object sender, EventArgs e)
+        {
+            if(this.Width > 1024)
+            {
+                this._chartProcessStatus.Legend.Visibility = DevExpress.Utils.DefaultBoolean.Default;
+            }
+            else
+            {
+                this._chartProcessStatus.Legend.Visibility = DevExpress.Utils.DefaultBoolean.False;
+            }
+        }
     }
 }

@@ -33,11 +33,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevExpress.Data.v18.2, Version=18.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Printing.v18.2.Core, Version=18.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Utils.v18.2, Version=18.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraBars.v18.2, Version=18.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraEditors.v18.2, Version=18.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Charts.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v19.1.UI, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v19.1.Wizard, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
@@ -63,6 +68,12 @@
     <Compile Include="Components\VMACardGroupBox.Designer.cs">
       <DependentUpon>VMACardGroupBox.cs</DependentUpon>
     </Compile>
+    <Compile Include="Components\VMATextInput.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\VMATextInput.Designer.cs">
+      <DependentUpon>VMATextInput.cs</DependentUpon>
+    </Compile>
     <Compile Include="Components\VMAVertMenuItem.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -81,6 +92,37 @@
     <Compile Include="HomePage.Designer.cs">
       <DependentUpon>HomePage.cs</DependentUpon>
     </Compile>
+    <Compile Include="Libraries\UIPageLoadHelper.cs" />
+    <Compile Include="LoginPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginPage.Designer.cs">
+      <DependentUpon>LoginPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Error\ErrorPageContainer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\Error\ErrorPageContainer.Designer.cs">
+      <DependentUpon>ErrorPageContainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Error\Page404.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\Error\Page404.Designer.cs">
+      <DependentUpon>Page404.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Error\Page500.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\Error\Page500.Designer.cs">
+      <DependentUpon>Page500.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Error\Page403.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\Error\Page403.Designer.cs">
+      <DependentUpon>Page403.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pages\ProdProcessRecord.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -98,6 +140,9 @@
     <EmbeddedResource Include="Components\VMACardGroupBox.resx">
       <DependentUpon>VMACardGroupBox.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Components\VMATextInput.resx">
+      <DependentUpon>VMATextInput.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Components\VMAVertMenuItem.resx">
       <DependentUpon>VMAVertMenuItem.cs</DependentUpon>
     </EmbeddedResource>
@@ -106,6 +151,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="HomePage.resx">
       <DependentUpon>HomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginPage.resx">
+      <DependentUpon>LoginPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\Error\ErrorPageContainer.resx">
+      <DependentUpon>ErrorPageContainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\Error\Page404.resx">
+      <DependentUpon>Page404.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\Error\Page500.resx">
+      <DependentUpon>Page500.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\Error\Page403.resx">
+      <DependentUpon>Page403.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\ProdProcessRecord.resx">
       <DependentUpon>ProdProcessRecord.cs</DependentUpon>
@@ -136,24 +196,42 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\baseline_perm_identity_black_24dp.png" />
+    <None Include="Resources\baseline_lock_black_24dp.png" />
+    <None Include="Resources\baseline_alternate_email_black_24dp.png" />
+    <None Include="Resources\baseline_phone_black_24dp.png" />
+    <None Include="Resources\baseline_edit_black_24dp.png" />
+    <None Include="Resources\baseline_warning_black_24dp.png" />
+    <Content Include="Sources\Images\403.png" />
+    <Content Include="Sources\Images\404.png" />
+    <Content Include="Sources\Images\500.png" />
     <Content Include="Sources\Images\baseline_account_circle_white_36dp.png" />
+    <Content Include="Sources\Images\baseline_alternate_email_black_24dp.png" />
     <Content Include="Sources\Images\baseline_cloud_upload_black_48dp.png" />
     <Content Include="Sources\Images\baseline_collections_black_48dp.png" />
     <Content Include="Sources\Images\baseline_devices_other_black_24dp.png" />
     <Content Include="Sources\Images\baseline_dvr_black_24dp.png" />
+    <Content Include="Sources\Images\baseline_edit_black_24dp.png" />
     <Content Include="Sources\Images\baseline_expand_less_black_24dp.png" />
     <Content Include="Sources\Images\baseline_expand_more_black_24dp.png" />
     <Content Include="Sources\Images\baseline_fullscreen_exit_white_24dp.png" />
     <Content Include="Sources\Images\baseline_fullscreen_white_24dp.png" />
     <Content Include="Sources\Images\baseline_home_black_18dp.png" />
     <Content Include="Sources\Images\baseline_home_black_24dp.png" />
+    <Content Include="Sources\Images\baseline_lock_black_24dp.png" />
     <Content Include="Sources\Images\baseline_menu_white_24dp.png" />
     <Content Include="Sources\Images\baseline_new_releases_black_24dp.png" />
+    <Content Include="Sources\Images\baseline_perm_identity_black_24dp.png" />
+    <Content Include="Sources\Images\baseline_phone_black_24dp.png" />
     <Content Include="Sources\Images\baseline_store_black_24dp.png" />
     <Content Include="Sources\Images\baseline_view_day_black_24dp.png" />
+    <Content Include="Sources\Images\baseline_warning_black_24dp.png" />
+    <Content Include="Sources\Images\easyicon_warning_red_24dp.png.png" />
     <Content Include="Sources\Images\logo.png" />
   </ItemGroup>
   <ItemGroup>
@@ -161,9 +239,17 @@
       <Project>{5849e01e-2630-4be3-a73b-28f3a138a926}</Project>
       <Name>mtsToolsConsole.Common</Name>
     </ProjectReference>
+    <ProjectReference Include="..\mtsToolsConsole.Controller\mtsToolsConsole.Controller.csproj">
+      <Project>{02b3eca8-2595-48f5-b844-dc711330cc8f}</Project>
+      <Name>mtsToolsConsole.Controller</Name>
+    </ProjectReference>
     <ProjectReference Include="..\mtsToolsConsole.Model\mtsToolsConsole.Model.csproj">
       <Project>{848539fb-0b55-4d3a-b780-bd9160c536fb}</Project>
       <Name>mtsToolsConsole.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\mtsToolsConsole.Repository\mtsToolsConsole.Repository.csproj">
+      <Project>{f1085761-71b9-4f4d-85ac-d4116d6e52f4}</Project>
+      <Name>mtsToolsConsole.Repository</Name>
     </ProjectReference>
     <ProjectReference Include="..\mtsToolsConsole.StaticSource\mtsToolsConsole.StaticSource.csproj">
       <Project>{371c8ce9-87cc-4633-87ce-4b5f70d542d6}</Project>
@@ -172,6 +258,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Cache\" />
+    <Folder Include="Popups\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
