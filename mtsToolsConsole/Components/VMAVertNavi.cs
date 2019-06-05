@@ -130,8 +130,10 @@ namespace mtsToolsConsole.Components
 
             foreach(var vmaVertMenuItem in vmaVertMenuItems)
             {
-                VMAVertMenuItem subVertMenuItem = vmaVertMenuItem.subNode.FirstOrDefault() as VMAVertMenuItem;
-                subVertMenuItem.Visible = !subVertMenuItem.Visible;
+                foreach( VMAVertMenuItem subVertMenuItem in vmaVertMenuItem.subNode)
+                {
+                    subVertMenuItem.Visible = !subVertMenuItem.Visible;
+                }
             }
         }
     }

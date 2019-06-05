@@ -28,21 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this._pnlCardTitle = new System.Windows.Forms.Panel();
             this._lblCardTitle = new System.Windows.Forms.Label();
+            this._pnlCardTitle = new System.Windows.Forms.Panel();
             this._pnlCardTitle.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // _pnlCardTitle
-            // 
-            this._pnlCardTitle.BackColor = System.Drawing.Color.Transparent;
-            this._pnlCardTitle.Controls.Add(this._lblCardTitle);
-            this._pnlCardTitle.Dock = System.Windows.Forms.DockStyle.Fill;
-            this._pnlCardTitle.Location = new System.Drawing.Point(0, 0);
-            this._pnlCardTitle.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this._pnlCardTitle.Name = "_pnlCardTitle";
-            this._pnlCardTitle.Size = new System.Drawing.Size(425, 48);
-            this._pnlCardTitle.TabIndex = 1;
             // 
             // _lblCardTitle
             // 
@@ -54,6 +43,17 @@
             this._lblCardTitle.Size = new System.Drawing.Size(97, 21);
             this._lblCardTitle.TabIndex = 0;
             this._lblCardTitle.Text = "Card Name";
+            // 
+            // _pnlCardTitle
+            // 
+            this._pnlCardTitle.BackColor = System.Drawing.Color.Transparent;
+            this._pnlCardTitle.Controls.Add(this._lblCardTitle);
+            this._pnlCardTitle.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._pnlCardTitle.Location = new System.Drawing.Point(0, 0);
+            this._pnlCardTitle.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this._pnlCardTitle.Name = "_pnlCardTitle";
+            this._pnlCardTitle.Size = new System.Drawing.Size(425, 48);
+            this._pnlCardTitle.TabIndex = 1;
             // 
             // VMACardGroupBox
             // 
@@ -75,7 +75,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel _pnlCardTitle;
         private System.Windows.Forms.Label _lblCardTitle;
+        private System.Windows.Forms.Panel _pnlCardTitle;
     }
 }

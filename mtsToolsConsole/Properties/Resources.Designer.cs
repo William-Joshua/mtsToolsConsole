@@ -113,6 +113,26 @@ namespace mtsToolsConsole.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap baseline_arrow_drop_down_black_18dp {
+            get {
+                object obj = ResourceManager.GetObject("baseline_arrow_drop_down_black_18dp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap baseline_arrow_drop_up_black_18dp {
+            get {
+                object obj = ResourceManager.GetObject("baseline_arrow_drop_up_black_18dp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap baseline_cloud_upload_black_48dp {
             get {
                 object obj = ResourceManager.GetObject("baseline_cloud_upload_black_48dp", resourceCulture);
@@ -317,6 +337,16 @@ namespace mtsToolsConsole.Properties {
             get {
                 object obj = ResourceManager.GetObject("logo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Icon mtsLogo {
+            get {
+                object obj = ResourceManager.GetObject("mtsLogo", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
             }
         }
     }

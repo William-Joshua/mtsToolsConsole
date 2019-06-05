@@ -111,7 +111,6 @@
             this._pnlProcessRecordMain = new System.Windows.Forms.Panel();
             this._pnlProcessRecordSpace = new System.Windows.Forms.Panel();
             this._vtbDeviceSN = new mtsToolsConsole.Components.VMATextInput();
-            this._lblDeviceSN = new System.Windows.Forms.Label();
             this._vcgProcessRecord = new mtsToolsConsole.Components.VMACardGroupBox();
             this._pnlProcessRecordTop = new System.Windows.Forms.Panel();
             this._pnlWorkOrderInfo = new System.Windows.Forms.Panel();
@@ -273,6 +272,7 @@
         series1,
         series2,
         series3};
+            this._chartProcessStatus.SeriesTemplate.SeriesColorizer = null;
             this._chartProcessStatus.Size = new System.Drawing.Size(372, 384);
             this._chartProcessStatus.TabIndex = 0;
             this._chartProcessStatus.Resize += new System.EventHandler(this._chartProcessStatus_Resize);
@@ -350,7 +350,6 @@
             // 
             this._pnlProcessRecordSpace.BackColor = System.Drawing.Color.White;
             this._pnlProcessRecordSpace.Controls.Add(this._vtbDeviceSN);
-            this._pnlProcessRecordSpace.Controls.Add(this._lblDeviceSN);
             this._pnlProcessRecordSpace.Dock = System.Windows.Forms.DockStyle.Fill;
             this._pnlProcessRecordSpace.Location = new System.Drawing.Point(0, 49);
             this._pnlProcessRecordSpace.Name = "_pnlProcessRecordSpace";
@@ -362,22 +361,14 @@
             this._vtbDeviceSN.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this._vtbDeviceSN.Appearance.Options.UseFont = true;
             this._vtbDeviceSN.InputTitleForeColor = "54, 68, 186";
-            this._vtbDeviceSN.Location = new System.Drawing.Point(92, 4);
+            this._vtbDeviceSN.Location = new System.Drawing.Point(24, 0);
             this._vtbDeviceSN.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this._vtbDeviceSN.Name = "_vtbDeviceSN";
-            this._vtbDeviceSN.Size = new System.Drawing.Size(240, 48);
+            this._vtbDeviceSN.Size = new System.Drawing.Size(307, 48);
             this._vtbDeviceSN.TabIndex = 11;
+            this._vtbDeviceSN.TextBoxType = mtsToolsConsole.Components.VMATextInput.TextInputType.Default;
             this._vtbDeviceSN.TextInputTitle = "产品条码";
             this._vtbDeviceSN.TextInputValue = "";
-            // 
-            // _lblDeviceSN
-            // 
-            this._lblDeviceSN.AutoSize = true;
-            this._lblDeviceSN.Location = new System.Drawing.Point(19, 25);
-            this._lblDeviceSN.Name = "_lblDeviceSN";
-            this._lblDeviceSN.Size = new System.Drawing.Size(67, 17);
-            this._lblDeviceSN.TabIndex = 8;
-            this._lblDeviceSN.Text = "产品条码 : ";
             // 
             // _vcgProcessRecord
             // 
@@ -563,7 +554,6 @@
             this._pnlProcessRecord.ResumeLayout(false);
             this._pnlProcessRecordMain.ResumeLayout(false);
             this._pnlProcessRecordSpace.ResumeLayout(false);
-            this._pnlProcessRecordSpace.PerformLayout();
             this._pnlWorkOrderInfo.ResumeLayout(false);
             this._pnlFloatHeadState.ResumeLayout(false);
             this._pnlFloatHeadState.PerformLayout();
@@ -603,7 +593,6 @@
         private Components.VMACardGroupBox _vcgProcessRecord;
         private System.Windows.Forms.Panel _pnlProcessStatusSpace;
         private DevExpress.XtraCharts.ChartControl _chartProcessStatus;
-        private System.Windows.Forms.Label _lblDeviceSN;
         private Components.VMATextInput _vtbDeviceSN;
     }
 }

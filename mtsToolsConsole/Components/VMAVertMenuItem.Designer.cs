@@ -52,7 +52,7 @@
             this._pnlMenuItem.Location = new System.Drawing.Point(0, 0);
             this._pnlMenuItem.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this._pnlMenuItem.Name = "_pnlMenuItem";
-            this._pnlMenuItem.Size = new System.Drawing.Size(260, 40);
+            this._pnlMenuItem.Size = new System.Drawing.Size(260, 32);
             this._pnlMenuItem.TabIndex = 0;
             // 
             // _pnlMenuItemTitle
@@ -63,7 +63,7 @@
             this._pnlMenuItemTitle.Location = new System.Drawing.Point(56, 0);
             this._pnlMenuItemTitle.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this._pnlMenuItemTitle.Name = "_pnlMenuItemTitle";
-            this._pnlMenuItemTitle.Size = new System.Drawing.Size(156, 40);
+            this._pnlMenuItemTitle.Size = new System.Drawing.Size(156, 32);
             this._pnlMenuItemTitle.TabIndex = 2;
             this._pnlMenuItemTitle.Click += new System.EventHandler(this._pnlMenuTypeIcon_Click);
             this._pnlMenuItemTitle.MouseDown += new System.Windows.Forms.MouseEventHandler(this._pnlMenuTypeIcon_MouseDown);
@@ -72,7 +72,7 @@
             // 
             this._lblMenuItemTitle.AutoSize = true;
             this._lblMenuItemTitle.ForeColor = System.Drawing.Color.Black;
-            this._lblMenuItemTitle.Location = new System.Drawing.Point(12, 13);
+            this._lblMenuItemTitle.Location = new System.Drawing.Point(12, 8);
             this._lblMenuItemTitle.Name = "_lblMenuItemTitle";
             this._lblMenuItemTitle.Size = new System.Drawing.Size(76, 17);
             this._lblMenuItemTitle.TabIndex = 0;
@@ -87,7 +87,7 @@
             this._pnlSubMenuExpand.Location = new System.Drawing.Point(212, 0);
             this._pnlSubMenuExpand.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this._pnlSubMenuExpand.Name = "_pnlSubMenuExpand";
-            this._pnlSubMenuExpand.Size = new System.Drawing.Size(48, 40);
+            this._pnlSubMenuExpand.Size = new System.Drawing.Size(48, 32);
             this._pnlSubMenuExpand.TabIndex = 1;
             this._pnlSubMenuExpand.Click += new System.EventHandler(this._pnlMenuTypeIcon_Click);
             this._pnlSubMenuExpand.MouseDown += new System.Windows.Forms.MouseEventHandler(this._pnlMenuTypeIcon_MouseDown);
@@ -95,7 +95,7 @@
             // _picSubMenuExpand
             // 
             this._picSubMenuExpand.EditValue = global::mtsToolsConsole.Properties.Resources.baseline_expand_less_black_24dp;
-            this._picSubMenuExpand.Location = new System.Drawing.Point(6, 3);
+            this._picSubMenuExpand.Location = new System.Drawing.Point(6, 0);
             this._picSubMenuExpand.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this._picSubMenuExpand.Name = "_picSubMenuExpand";
             this._picSubMenuExpand.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
@@ -114,7 +114,7 @@
             this._pnlMenuTypeIcon.Location = new System.Drawing.Point(0, 0);
             this._pnlMenuTypeIcon.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this._pnlMenuTypeIcon.Name = "_pnlMenuTypeIcon";
-            this._pnlMenuTypeIcon.Size = new System.Drawing.Size(56, 40);
+            this._pnlMenuTypeIcon.Size = new System.Drawing.Size(56, 32);
             this._pnlMenuTypeIcon.TabIndex = 0;
             this._pnlMenuTypeIcon.Click += new System.EventHandler(this._pnlMenuTypeIcon_Click);
             this._pnlMenuTypeIcon.MouseDown += new System.Windows.Forms.MouseEventHandler(this._pnlMenuTypeIcon_MouseDown);
@@ -122,7 +122,7 @@
             // _picMenuTypeIcon
             // 
             this._picMenuTypeIcon.EditValue = global::mtsToolsConsole.Properties.Resources.baseline_view_day_black_24dp;
-            this._picMenuTypeIcon.Location = new System.Drawing.Point(18, 4);
+            this._picMenuTypeIcon.Location = new System.Drawing.Point(18, 0);
             this._picMenuTypeIcon.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this._picMenuTypeIcon.Name = "_picMenuTypeIcon";
             this._picMenuTypeIcon.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
@@ -143,9 +143,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this._pnlMenuItem);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "VMAVertMenuItem";
-            this.Size = new System.Drawing.Size(260, 40);
+            this.Size = new System.Drawing.Size(260, 32);
             this._pnlMenuItem.ResumeLayout(false);
             this._pnlMenuItemTitle.ResumeLayout(false);
             this._pnlMenuItemTitle.PerformLayout();
