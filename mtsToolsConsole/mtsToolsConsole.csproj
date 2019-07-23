@@ -85,6 +85,12 @@
     <Compile Include="Components\VMAInputSelect.Designer.cs">
       <DependentUpon>VMAInputSelect.cs</DependentUpon>
     </Compile>
+    <Compile Include="Components\VMAScrollListPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\VMAScrollListPanel.Designer.cs">
+      <DependentUpon>VMAScrollListPanel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Components\VMATextInput.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -174,6 +180,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Components\VMAInputSelect.resx">
       <DependentUpon>VMAInputSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\VMAScrollListPanel.resx">
+      <DependentUpon>VMAScrollListPanel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Components\VMATextInput.resx">
       <DependentUpon>VMATextInput.cs</DependentUpon>

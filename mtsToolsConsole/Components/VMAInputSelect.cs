@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using mtsToolsConsole.Common;
+using System.Collections.ObjectModel;
 
 namespace mtsToolsConsole.Components
 {
@@ -17,8 +18,9 @@ namespace mtsToolsConsole.Components
         public VMAInputSelect()
         {
             InitializeComponent();
-        }
 
+        }
+        
         #region 属性
         private string _textInputTitle = string.Format("Title");
         [Description("标题栏"), Category("文本框标题")]
@@ -31,6 +33,7 @@ namespace mtsToolsConsole.Components
             set
             {
                 _textInputTitle = value;
+                InitVMATextInputUI();
             }
         }
 
@@ -45,9 +48,25 @@ namespace mtsToolsConsole.Components
             set
             {
                 _inputTitleForeColor = value;
+                InitVMATextInputUI();
             }
         }
 
+
+        private ObservableCollection<string> _selectionItems = new ObservableCollection<string>();
+        [Description("可选成员"), Category("可选成员")]
+        public ObservableCollection<string> SelectionItems
+        {
+            get
+            {
+                return _selectionItems;
+            }
+            set
+            {
+                _selectionItems = value;
+                InitVMATextInputUI();
+            }
+        }
         #endregion
         /// <summary>
         /// 显示下拉菜单
@@ -56,10 +75,10 @@ namespace mtsToolsConsole.Components
         /// <param name="e"></param>
         private void _picInputSpaceImage_Click(object sender, EventArgs e)
         {
-            // 设置下拉菜单宽度
-            this._cmenuSelectItems.Width = _pnlInputSpaceText.Width;
-            this._cmenuSelectItems.MaximumSize = new Size(_pnlInputSpaceText.Width, 480);
-            this._cmenuSelectItems.Show(this._pnlInputSpaceText.Location.X, this._pnlInputSpace.Location.Y);
+            VMAScrollListPanel vmaScrollListPanel = new VMAScrollListPanel();
+            vmaScrollListPanel.Location = this._lblInputDesc.Location;
+            vmaScrollListPanel.BringToFront();
+            this.Controls.Add(vmaScrollListPanel);
         }
 
         private void InitVMATextInputUI()
@@ -70,6 +89,14 @@ namespace mtsToolsConsole.Components
             // 颜色转换
             int[] colorRGBBackColor = DrawColorConsole.ConvertStr2RGB(_inputTitleForeColor);
             this._lblInputTitle.ForeColor = Color.FromArgb(colorRGBBackColor[0], colorRGBBackColor[1], colorRGBBackColor[2]);
+
+            if(_selectionItems.Count() == 0)
+            {
+                return;
+            }
+            foreach(string selectionItem in _selectionItems)
+            {
+            }
         }
     }
 }

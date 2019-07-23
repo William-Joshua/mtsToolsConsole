@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this._pnlInputSpaceText = new System.Windows.Forms.Panel();
             this._lblInputDesc = new DevExpress.XtraEditors.LabelControl();
             this._pnlInputSpaceImage = new System.Windows.Forms.Panel();
@@ -37,7 +36,6 @@
             this._lblInputTitle = new System.Windows.Forms.Label();
             this._lblInputSpaceSpara = new System.Windows.Forms.Label();
             this._pnlInputSpace = new System.Windows.Forms.Panel();
-            this._cmenuSelectItems = new System.Windows.Forms.ContextMenuStrip(this.components);
             this._pnlInputSpaceText.SuspendLayout();
             this._pnlInputSpaceImage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this._picInputSpaceImage.Properties)).BeginInit();
@@ -139,11 +137,6 @@
             this._pnlInputSpace.Size = new System.Drawing.Size(240, 48);
             this._pnlInputSpace.TabIndex = 1;
             // 
-            // _cmenuSelectItems
-            // 
-            this._cmenuSelectItems.Name = "_cmenuSelectItems";
-            this._cmenuSelectItems.Size = new System.Drawing.Size(61, 4);
-            // 
             // VMAInputSelect
             // 
             this.Appearance.BackColor = System.Drawing.Color.Transparent;
@@ -177,6 +170,5 @@
         private System.Windows.Forms.Label _lblInputTitle;
         private System.Windows.Forms.Label _lblInputSpaceSpara;
         private System.Windows.Forms.Panel _pnlInputSpace;
-        private System.Windows.Forms.ContextMenuStrip _cmenuSelectItems;
     }
 }

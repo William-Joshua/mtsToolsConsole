@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProdAssemblyRecord));
             this._lblSubPageTitle = new System.Windows.Forms.Label();
             this._lblMainSeparSub = new System.Windows.Forms.Label();
             this._lblMainPageTitle = new System.Windows.Forms.Label();
@@ -42,6 +43,7 @@
             this._pnlPPRMainWork = new System.Windows.Forms.Panel();
             this._pnlFloatHeadState = new System.Windows.Forms.Panel();
             this._picHomeIcon = new DevExpress.XtraEditors.PictureEdit();
+            this.vmaInputSelect1 = new mtsToolsConsole.Components.VMAInputSelect();
             this._pnlProcessStatus.SuspendLayout();
             this._pnlCmdRight.SuspendLayout();
             this._pnlMainConsole.SuspendLayout();
@@ -116,6 +118,7 @@
             // _pnlProcessStatus
             // 
             this._pnlProcessStatus.BackColor = System.Drawing.Color.WhiteSmoke;
+            this._pnlProcessStatus.Controls.Add(this.vmaInputSelect1);
             this._pnlProcessStatus.Controls.Add(this._pnlMarginRight);
             this._pnlProcessStatus.Controls.Add(this._pnlMarginLeft);
             this._pnlProcessStatus.Controls.Add(this._pnlProcessStatusBottom);
@@ -198,6 +201,21 @@
             this._picHomeIcon.Size = new System.Drawing.Size(20, 20);
             this._picHomeIcon.TabIndex = 1;
             // 
+            // vmaInputSelect1
+            // 
+            this.vmaInputSelect1.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.vmaInputSelect1.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.vmaInputSelect1.Appearance.Options.UseBackColor = true;
+            this.vmaInputSelect1.Appearance.Options.UseFont = true;
+            this.vmaInputSelect1.InputTitleForeColor = "54, 68, 186";
+            this.vmaInputSelect1.Location = new System.Drawing.Point(113, 49);
+            this.vmaInputSelect1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.vmaInputSelect1.Name = "vmaInputSelect1";
+            this.vmaInputSelect1.SelectionItems = ((System.Collections.ObjectModel.ObservableCollection<string>)(resources.GetObject("vmaInputSelect1.SelectionItems")));
+            this.vmaInputSelect1.Size = new System.Drawing.Size(240, 48);
+            this.vmaInputSelect1.TabIndex = 7;
+            this.vmaInputSelect1.TextInputTitle = "Title";
+            // 
             // ProdAssemblyRecord
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
@@ -232,5 +250,6 @@
         private DevExpress.XtraEditors.PictureEdit _picHomeIcon;
         private System.Windows.Forms.Panel _pnlMarginRight;
         private System.Windows.Forms.Panel _pnlMarginLeft;
+        private Components.VMAInputSelect vmaInputSelect1;
     }
 }
